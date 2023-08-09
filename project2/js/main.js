@@ -18,7 +18,8 @@ $(function () {
     $(".scMain").find("#main-slider").slick({
         arrows: true,
         variableWidth: true,
-        // autoplay: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
 
         prevArrow: $(".main-slide-btn-wrap").find(".slide-prev"),
         nextArrow: $(".main-slide-btn-wrap").find(".slide-next"),
@@ -87,8 +88,9 @@ $(".snsTabArea .snsTabTitle li").on("click", function () {
 
 
 $("footer").find("#footerSlider").slick({
-    // autoplay: true,
-    // autoplaySpeed: 1200,
+    autoplay: true,
+    autoplaySpeed: 1200,
+
     slidesToShow: 6,
     variableWidth: true,
 

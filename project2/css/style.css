@@ -4,6 +4,7 @@
 body{
     /*position: relative;*/
     font-family: 'GmarketSansMedium', sans-serif;
+    background-color: #F2FBFF;
 }
 
 
@@ -38,8 +39,7 @@ body{
 
 /*section1*/
 .scMain{
-    /*display: none;*/
-    background-color: lightgray;
+    /*background-color: #F2FBFF;*/
 }
 
 .scMain .mainWrap{
@@ -123,7 +123,7 @@ body{
     position: relative;
     padding: 15px 10px;
     height: 150px;
-    background: #F2FBFF;
+    background: white;
     border-radius: 0 20px 20px 20px;
 }
 
@@ -203,14 +203,40 @@ body{
 
 /*section2*/
 .sc2{
+    position: relative;
     padding: 50px 0;
     box-sizing: border-box;
-    background: #e8eff1;
+    background-color: #eef5fa;
     /*border: 2px solid red;*/
 }
+.sc2:before{
+    content: "gyeonggi-do fire services";
+    position: absolute;
+    color: rgba(5, 91, 166, 0.06);
+    right: -10px;
+    top: 13px;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 1;
+}
+.sc2:after{
+    content: "gyeonggi-do fire services";
+    position: absolute;
+    color: rgba(5, 91, 166, 0.06);
+    left: -10px;
+    bottom: 3px;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
 .sc2 .sc2Wrap{
+    position: relative;
     display: flex;
     justify-content: space-between;
+    z-index: 10;
 }
 
 .sc2 .sc2Wrap .accordionArea{
@@ -415,7 +441,7 @@ body{
 /*section3*/
 .sc3{
     padding: 50px 0;
-    background-color: lightgray;
+    /*background-color: #F2FBFF;*/
 }
 
 .sc3 .sc3Wrap{
@@ -490,18 +516,44 @@ body{
 
 /*section4*/
 .sc4{
+    position: relative;
     padding: 50px 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background: #e2efef;
+    background-color: #eef5fa;
+    overflow: hidden;
+}
+.sc4:before{
+    content: "gyeonggi-do fire services";
+    position: absolute;
+    color: rgba(5, 91, 166, 0.06);
+    right: -10px;
+    top: 13px;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 1;
+}
+.sc4:after{
+    content: "gyeonggi-do fire services";
+    position: absolute;
+    color: rgba(5, 91, 166, 0.06);
+    left: -10px;
+    bottom: 3px;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 1;
 }
 
 .sc4 .quickBanner{
+    position: relative;
     display: flex;
     height: 100px;
     background: white;
     border-radius: 20px;
+    z-index: 10;
 }
 .sc4 .quickBanner li{
     position: relative;
@@ -559,10 +611,12 @@ body{
 }
 
 .sc4 .complainArea{
+    position: relative;
     display: flex;
     justify-content: space-between;
     height: 150px;
     margin: 20px 0;
+    z-index: 10;
 }
 
 /*.sc4 .complainArea > a{*/
@@ -620,10 +674,12 @@ body{
 
 
 .sc4 .disasterStatus{
+    position: relative;
     display: block;
     height: 100px;
     background: white;
     border-radius: 20px;
+    z-index: 10;
 }
 .sc4 .disasterStatus p{
     line-height: 100px;

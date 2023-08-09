@@ -39,6 +39,7 @@ header{}
 }
 header {
     position: relative;
+    background-color: white;
     z-index: 100;
 }
 header .headerTop{
