@@ -126,7 +126,6 @@ header .headerTop .weatherLink ul{
 
 .headerBottom nav{
     text-align: left;
-    /*text-align: center;*/
 }
 .headerBottom nav .headerGnb{
     font-size: 0;
@@ -134,7 +133,6 @@ header .headerTop .weatherLink ul{
 .headerBottom nav .headerGnb > li{
     display: inline-block;
     margin-right: 70px;
-    /*background: red;*/
 }
 .headerBottom nav .headerGnb > li:last-child{
     margin-right: 0;
@@ -148,9 +146,6 @@ header .headerTop .weatherLink ul{
 .headerBottom nav .headerGnb li .depth2{
     display: none;
     position: absolute;
-    /*text-align: left;*/
-    /*height: 0;*/
-    /*bottom: 50px;*/
     overflow: hidden;
     padding-top: 10px;
     transition: height 0.5s 0.02s;
