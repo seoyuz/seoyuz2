@@ -1,0 +1,128 @@
+@import url("../css/common.css");
+
+
+
+/*main*/
+main .inner{
+    width: 1180px;
+}
+
+.container{
+    display: flow-root;
+    margin-bottom: 150px;
+}
+
+/*side menu*/
+.container .sideMenu{
+    float: left;
+    width: 258px;
+    text-align: center;
+}
+.container .sideMenu .present{
+    width: 100%;
+    line-height: 100px;
+    font-size: 22px;
+    color: white;
+    background: #002f6e;
+}
+.container .sideMenu > li{
+    display: block;
+    margin-bottom: 10px;
+    /*height: 100px;*/
+    line-height: 100px;
+    background: #055ba6;
+}
+.container .sideMenu li a{
+    color: white;
+}
+.container .sideMenu li ul{
+    display: block;
+    background: white;
+}
+.container .sideMenu li ul li{
+    position: relative;
+    padding: 10px 40px;
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+    background: white;
+    border: 1px solid #e7e7e7;
+}
+.container .sideMenu li ul li:before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: black;
+}
+.container .sideMenu li ul li a{
+    color: black;
+}
+.container .sideMenu li ul li a:hover{}
+/*.container .sideMenu > li ul li a:hover:after{*/
+/*    content: "";*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+/*    height: 1px;*/
+/*    background: black;*/
+/*}*/
+
+/*main container*/
+.container .mainContainer{
+    float: right;
+    width: 872px;
+}
+.container .mainContainer .mainTitleWrap{
+    margin-bottom: 25px;
+}
+.container .mainContainer .mainTitleWrap > *{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid black;
+}
+.container .mainContainer .mainTitleWrap .mainTitle{
+    font-size: 32px;
+}
+.container .mainContainer .mainTitleWrap .mainTitlePath{
+    line-height: 50px;
+}
+.container .mainContainer .mainTitleWrap .mainTitlePath i{}
+.container .mainContainer .mainTitleWrap .mainTitlePath span{}
+
+.container .mainContainer .mainContentsWrap{
+    width: 842px;
+    margin: 0 auto;
+}
+.container .mainContainer .mainContentsWrap .mainContents{
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #EFEFEF;
+}
+.container .mainContainer .mainContentsWrap .mainContents:last-child{
+    margin-bottom: 0;
+}
+.container .mainContainer .mainContentsWrap .mainContents p{
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    text-align: center;
+    background: #ff9c2e;
+    border-radius: 10px;
+}
+.container .mainContainer .mainContentsWrap .mainContents strong{
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 8px 0 15px;
+}
+.container .mainContainer .mainContentsWrap .mainContents span{
+    line-height: 1.4;
+}

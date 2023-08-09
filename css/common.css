@@ -1,0 +1,103 @@
+
+
+/*header*/
+header{
+    /*display: none;*/
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    background: black;
+    color: white;
+    transition: 0.5s;
+    z-index: 9999;
+}
+header .headerWrap{
+}
+header .headerWrap h1{
+    position: absolute;
+    left: 55px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .headerWrap h1 a{
+    display: block;
+    width: 55px;
+    height: 25px;
+
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100% auto;
+}
+
+header .headerWrap nav{}
+header .headerWrap nav .gnb{
+    font-size: 0;
+}
+header .headerWrap nav .gnb li{
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 110px;
+}
+header .headerWrap nav .gnb li:last-child{
+    margin-right: 0;
+}
+header .headerWrap nav .gnb li a {}
+header .headerWrap nav .gnb li a img{
+    width: 13px;
+    height: 13px;
+}
+
+header .headerWrap .darkMode{
+    position: absolute;
+    right: 55px;
+    top: 50%;
+    transform: translateY(-50%);
+} /*다크모드하는법 : 바디태그에 클래스를 주고 색상 내용 바꿔준다음 toggleClass 로 온오프*/
+
+/*hover*/
+header.on{
+    background: white;
+    color: black;
+}
+
+header.on .headerWrap nav .gnb li a img{
+    width: 13px;
+    height: 13px;
+    /*background-image: url("../images/arrow.png");*/
+}
+
+/*footer*/
+.footer{
+    background: black;
+    height: 100px;
+    color: white;
+    overflow: hidden;
+}
+.footer .textRolling{
+    font-size: 1.9vw;
+    line-height: 80px;
+    color: #FE6C3B;
+    text-transform: uppercase;
+    white-space: nowrap;
+    animation: textRolling 6s linear infinite;
+    /*border: 2px solid red;*/
+}
+.footer .textRolling p{
+}
+@keyframes textRolling {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(+100%);
+    }
+}
+.footer .text{
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}

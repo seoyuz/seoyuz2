@@ -1,0 +1,402 @@
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+@font-face{
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-weight: normal;
+    font-size: inherit;
+}
+
+body{
+    /*position: relative;*/
+    font-family: 'GmarketSansMedium', sans-serif;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+/* ---------------header start--------------- */
+header{}
+
+.inner{
+    width: 1280px;
+    margin: 0 auto;
+}
+header {
+    position: relative;
+    z-index: 100;
+}
+header .headerTop{
+    background-color: #004098;
+}
+header .headerTop .inner{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+}
+
+header .headerTop .portalLink ul{
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+header .headerTop .portalLink ul li{
+    padding: 8px;
+    background-color: #f27127;
+    position: relative;
+}
+header .headerTop .portalLink ul li:hover{
+    background-color: #e75924;
+    margin-top: -8px;
+}
+
+header .headerTop .weatherLink ul{
+    position: absolute;
+    display: flex;
+    gap: 34px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.headerTop .weatherLink ul li{}
+.headerTop .weatherLink ul li a{
+    display: flex;
+    align-items: center;
+}
+.headerTop .weatherLink ul li a img{
+    margin-right: 10px;
+}
+
+
+.headerTop .weatherLink span{
+    font-size: 13px;
+}
+
+.headerBottom {
+    position: relative;
+    border-bottom: 1px solid #cecece;
+    box-sizing: border-box;
+}
+.headerBottom.active:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    border-bottom: 1px solid #cecece;
+    box-sizing: border-box;
+}
+
+.headerBottom .inner{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.headerBottom .headerLogo a{
+    display: block;
+    background: url("../img/logo.png") no-repeat center/100%;
+    width: 290px;
+    height: 60px;
+}
+
+.headerBottom nav{
+    text-align: left;
+    /*text-align: center;*/
+}
+.headerBottom nav .headerGnb{
+    font-size: 0;
+}
+.headerBottom nav .headerGnb > li{
+    display: inline-block;
+    margin-right: 70px;
+    /*background: red;*/
+}
+.headerBottom nav .headerGnb > li:last-child{
+    margin-right: 0;
+}
+.headerBottom nav .headerGnb li > a{
+    display: block;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.headerBottom nav .headerGnb li .depth2{
+    display: none;
+    position: absolute;
+    /*text-align: left;*/
+    /*height: 0;*/
+    /*bottom: 50px;*/
+    overflow: hidden;
+    padding-top: 10px;
+    transition: height 0.5s 0.02s;
+    box-sizing: border-box;
+}
+.headerBottom nav .headerGnb li .depth2 li {
+    padding: 12px 0;
+    line-height: 1.4;
+}
+.headerBottom nav .headerGnb li .depth2 li a{
+    font-size: 14px;
+}
+.headerBottom nav .headerGnb li .depth2 li a:after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: transparent;
+    transition: 130ms;
+}
+.headerBottom nav .headerGnb li .depth2 li a:hover{
+    color: #e75924;
+}
+.headerBottom nav .headerGnb li .depth2 li a:hover:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e75924;
+}
+.headerBottom nav .headerGnb li .depth2 li span{}
+
+
+/*header active*/
+.headerBottom.active {
+    background: white;
+    border-bottom: 1px solid #cecece;
+}
+.headerBottom.active:before {
+    height: 500px;
+}
+.headerBottom.active nav .headerGnb li .depth2 {
+    display: block;
+}
+
+/* ---------------header end--------------- */
+
+
+/* ---------------footer start--------------- */
+footer{
+    text-transform: uppercase;
+}
+footer .footerSliderWrap{
+    height: 100px;
+    background: white;
+    border-top: 1px solid #cecece
+}
+footer .footerSliderWrap .footerSliderArea{
+    position: relative;
+    height: 100px;
+}
+footer .footerSliderWrap .footerSliderArea .footerSlider{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1160px;
+}
+footer .footerSliderWrap .footerSliderArea .footerSlider div{}
+footer .footerSliderWrap .footerSliderArea .footerSlider .slick-slide{
+    width: 162px;
+    margin-right: 37px;
+}
+footer .footerSliderWrap .footerSliderArea .footerSlider .slick-slide img{
+    width: 100%;
+}
+footer .footerSliderWrap .footerSliderArea .footerSlider div img{}
+
+footer .footerSliderWrap .footerSliderArea .footerSlideArrow{}
+footer .footerSliderWrap .footerSliderArea .footerSlideArrow > div{
+    position: absolute;
+    height: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+footer .footerSliderWrap .footerSliderArea .footerSlideArrow .prev{
+    left: 0;
+}
+footer .footerSliderWrap .footerSliderArea .footerSlideArrow .next{
+    right: 0;
+}
+footer .footerSliderWrap .footerSliderArea .footerSlideArrow div i{
+    font-size: 25px;
+}
+
+footer .footerPolicyWrap{
+    height: 50px;
+    background: #004098;
+}
+
+footer .footerPolicyWrap a{
+    line-height: 50px;
+    margin-right: 50px;
+}
+footer .footerPolicyWrap  a.privacy{
+    font-weight: bold;
+    color: #e75924;
+}
+
+footer .footerInfo{
+    position: relative;
+    height: 135px;
+    background: #666;
+}
+footer .footerInfo .inner{}
+footer .footerInfo .footerInfoWrap{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .footerInfo .footerInfoWrap .footerLogo{
+    width: 220px;
+}
+footer .footerInfo .footerInfoWrap .footerLogo img{
+    display: block;
+    margin-top: 13px;
+    width: 100%;
+}
+
+footer .footerInfo .footerInfoWrap .footerInfoArea{}
+footer .footerInfo .footerInfoWrap .footerInfoArea p{
+    margin-top: 12px;
+    font-size: 14px;
+    color: #222;
+}
+footer .footerInfo .footerInfoWrap .footerInfoArea p span{}
+footer .footerInfo .footerInfoWrap .footerInfoArea p span:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 0 15px 0 15px;
+    background: rgba(51, 51, 51, 0.4);
+}
+footer .footerInfo .footerInfoWrap .footerInfoArea p span:last-child:after{
+    display: none;
+}
+
+footer .footerInfo .footerInfoWrap .webA{
+    width: 100px;
+}
+footer .footerInfo .footerInfoWrap .webA img{
+    width: 100px;
+}
+/* ---------------footer end--------------- */
+
+
+/*sub page side menu*/
+.container{
+    display: flow-root;
+    margin-bottom: 150px;
+}
+
+/*side menu*/
+.container .sideMenu{
+    float: left;
+    width: 258px;
+    text-align: center;
+}
+.container .sideMenu .present{
+    width: 100%;
+    line-height: 100px;
+    font-size: 22px;
+    color: white;
+    background: #002f6e;
+}
+.container .sideMenu > li{
+    display: block;
+    margin-bottom: 10px;
+    /*height: 100px;*/
+    line-height: 100px;
+    background: #055ba6;
+}
+.container .sideMenu li a{
+    color: white;
+}
+.container .sideMenu li ul{
+    display: block;
+    background: white;
+}
+.container .sideMenu li ul li{
+    position: relative;
+    padding: 10px 40px;
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+    background: white;
+    border: 1px solid #e7e7e7;
+}
+.container .sideMenu li ul li:before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: black;
+}
+.container .sideMenu li ul li a{
+    color: black;
+}
+.container .sideMenu li ul li a:hover{}
+/*.container .sideMenu > li ul li a:hover:after{*/
+/*    content: "";*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+/*    height: 1px;*/
+/*    background: black;*/
+/*}*/
+
+
+/*main container title*/
+.container .mainContainer{
+    float: right;
+    width: 872px;
+}
+.container .mainContainer .mainTitleWrap{
+    margin-bottom: 25px;
+}
+.container .mainContainer .mainTitleWrap > *{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid black;
+}
+.container .mainContainer .mainTitleWrap .mainTitle{
+    font-size: 32px;
+}
+.container .mainContainer .mainTitleWrap .mainTitlePath{
+    line-height: 50px;
+}
+.container .mainContainer .mainTitleWrap .mainTitlePath i{}
+.container .mainContainer .mainTitleWrap .mainTitlePath span{}

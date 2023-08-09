@@ -1,0 +1,569 @@
+@import url(common.css);
+
+body{
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*main*/
+section{
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+section .scNum{
+    position: absolute;
+    right: -25px;
+    top: 0;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 220px;
+    -webkit-text-stroke: 2px rgba(182, 182, 182, 0.4);
+    color: transparent;
+}
+
+
+section .inner .titleArea{
+    position: absolute;
+    left: 0;
+    top: 42px;
+    margin-bottom: 80px;
+}
+section .inner .titleArea h2{
+    text-transform: uppercase;
+    font-family: 'Playfair Display',serif;
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+section .inner .titleArea h2 span{
+    color: orangered;
+}
+
+/*visual section*/
+.visual{
+    /*display: none;*/
+    position: relative;
+    height: 100vh;
+    background: black;
+    text-transform: uppercase;
+    color: white;
+}
+.visual .visualText{
+    position: absolute;
+    left: 50px;
+    bottom: 68px;
+    font-family: 'Playfair Display',serif;
+    font-size: 10vw;
+}
+.visual .visualText p{}
+.visual .visualText .txt-1{}
+.visual .visualText .txt-1 span{
+    font-size: 2vw;
+    color: orangered;
+}
+.visual .visualText .txt-2{
+    margin-left: 185px;
+}
+.visual .visualText .txt-3{}
+.visual .visualText p img{
+    animation: rotateImg 3s linear infinite;
+    /*transform-origin: 50% 50%;*/
+}
+@keyframes rotateImg {
+    100% { transform: rotate(360deg);}
+}
+
+.visual .scrollDown{
+    position: absolute;
+    right: 50px;
+    bottom: 5%;
+    width: 100px;
+    height: 120px;
+    animation: flyAni 3s linear infinite;
+}
+@keyframes flyAni {
+     0%{ margin-bottom: 0px;}
+     25%{ margin-bottom: 5px;}
+     50%{ margin-bottom: 10px;}
+     75%{ margin-bottom: 5px;}
+     100%{ margin-bottom: 0px;}
+ }
+.visual .scrollDown img{
+    width: 100px;
+    height: 100px;
+}
+.visual .scrollDown p{
+    text-align: center;
+}
+
+/*intro section*/
+.intro{
+    height: 800px;
+    margin-bottom: 0;
+}
+.intro .inner{
+    position: relative;
+    height: 100%;
+}
+
+
+.intro .introduceArea{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 1200px;
+    padding: 200px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.intro .introduceArea > div{
+    margin-bottom: 28px;
+}
+.intro .introduceArea .introTxt-1{}
+.intro .introduceArea .introImg{
+    position: absolute;
+    width: 320px;
+    height: 480px;
+    background: gray;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -9999;
+}
+.intro .introduceArea .introImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.intro .introduceArea .introTxt-1 p{}
+.intro .introduceArea .introTxt-1 p span{
+    position: relative;
+    padding: 5px 5px 0 5px;
+    color: orangered;
+}
+.intro .introduceArea .introTxt-1 p span:after{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: rgba(255, 69, 0, 0.6);
+    transition: 0.8s;
+}
+.intro .introduceArea .introTxt-1:hover p span:after{
+    width: 100%;
+    background: rgba(255, 69, 0, 1);
+}
+.intro .introduceArea .introTxt-1:hover .introImg{
+    opacity: 0.9;
+}
+.intro .introduceArea .introTxt-1 .introImg{
+    right: 130px;
+    top: 0;
+}
+
+.intro .introduceArea .introTxt-2{}
+.intro .introduceArea .introTxt-2 p{}
+
+.intro .introduceArea .introTxt-3{
+    margin-bottom: 0;
+}
+.intro .introduceArea .introTxt-3 span{
+    position: relative;
+
+}
+
+.intro .introduceArea .introTxt-3 span:after{
+    content: '';
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: #a4a4a4;
+    transition: 0.8s;
+}
+.intro .introduceArea .introTxt-3:hover span:after{
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
+/*.intro .introduceArea .introTxt-3 span:after{*/
+/*    background: rgba(0, 0, 0, 1);*/
+/*}*/
+.intro .introduceArea .introTxt-3 .introImg {
+    left: 170px;
+    bottom: 0;
+}
+
+/*.intro .introduceArea .introTxt-3.active span:after {*/
+/*    width: 100%;*/
+/*}*/
+
+/*.intro .introduceArea .introTxt-3 .introImg {*/
+/*    opacity: 0.9;*/
+/*}*/
+
+/*text scrolling*/
+.textScrolling{
+    /*height: 1500px;*/
+    padding: 150px 0;
+    font-size: 48px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 150px;
+    border: 2px solid black;
+}
+
+.textScrolling .textLeft{
+    display: flex;
+    gap: 40px;
+    text-transform: uppercase;
+}
+.textScrolling .textLeft div {}
+.textScrolling .textLeft img{
+    width: 50px;
+    height: 50px;
+}
+.textScrolling .textLeft span{}
+
+.textScrolling .textRight{
+    display: flex;
+    gap: 54px;
+    margin: 50px 0;
+    font-family: 'Playfair Display', serif;
+}
+.textScrolling .textRight div{}
+
+/*project section*/
+.project{
+    height: 820px;
+}
+.project .inner{
+    position: relative;
+    height: 100%;
+}
+
+.project .titleArea .dotWrap{}
+.project .titleArea .dotWrap .customDots{
+    display: flex;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bold;
+}
+.project .titleArea .dotWrap .customDots li{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.project .titleArea .dotWrap .customDots li.slick-active{
+    color: orangered;
+}
+.project .titleArea .dotWrap .customDots li button{ display: none; }
+
+.project .slideArea{
+    position: absolute;
+    bottom: 0;
+}
+.project .slideArea .arrowWrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: #696969;
+}
+.project .slideArea .arrowWrap > div{
+    cursor: pointer;
+}
+.project .slideArea .arrowWrap .prevArrow{}
+.project .slideArea .arrowWrap .prevArrow:before{
+    content: "";
+    display: inline-block;
+    margin: 0 8px 4px 0;
+    width: 34px;
+    height: 2px;
+    background: #808080;
+}
+.project .slideArea .arrowWrap .prevArrow p{}
+.project .slideArea .arrowWrap .nextArrow{}
+.project .slideArea .arrowWrap .nextArrow:after{
+    content: "";
+    display: inline-block;
+    margin: 0 0 4px 8px;
+    width: 34px;
+    height: 2px;
+    background: #808080;
+}
+.project .slideArea .arrowWrap .nextArrow p{}
+
+.project .slideArea .sliderWrap{
+    position: relative;
+    width: 1200px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.project .slideArea .sliderWrap .projectSlider{}
+.project .slideArea .sliderWrap .projectSlider .slick-slide{
+    width: 800px;
+}
+.project .slideArea .sliderWrap .projectSlider .slick-slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.project .sliderWrap .textBoxWrap{
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    box-sizing: border-box;
+    right: 0;
+    top: 0;
+    background: white;
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+.project .sliderWrap .textBoxWrap .textBox{
+    position: absolute;
+    width: 400px;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+.project .slideArea .textBoxWrap .textBox.active{
+    opacity: 1;
+}
+.project .sliderWrap .textBoxWrap .textBox .textTitle{
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+.project .sliderWrap .textBoxWrap .textBox .textTitle h3{
+    text-transform: capitalize;
+}
+.project .slideArea .textBoxWrap .textBox .textTitle .projectNum{
+    font-family: 'Nanum Myeongjo', serif;
+    color: orangered;
+}
+.project .slideArea .textBoxWrap .textBox .desc{
+    line-height: 1.5;
+    margin-bottom: 100px;
+}
+.project .slideArea .textBoxWrap .textBox .link{}
+
+.project .slideArea .textBoxWrap .textBox .link a{}
+
+.project .slideArea .progressWrap{}
+.project .slideArea .progressWrap .pageCount{}
+.project .slideArea .progressWrap{
+    margin: 20px auto 0;
+    width: 75%;
+    height: 6px;
+    border-radius: 5px;
+    background: #fff1e9;
+}
+.project .slideArea .progressWrap .progressBar{
+    height: 100%;
+    border-radius: 5px;
+    background: orangered;
+    transition: 1s;
+}
+
+/*goal section*/
+.goal{
+    padding: 100px;
+}
+.goal .quotation{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Playfair Display',serif;
+    font-size: 3vw;
+    font-weight: bold;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: rgba(182, 182, 182, 0.3);
+}
+.goal .quotation p{}
+
+.goal .quotation .txt-1{}
+.goal .quotation .txt-1:before{
+    content: '\201C';
+    position: absolute;
+    left: -70px;
+    top: -30px;
+    font-size: 100px;
+}
+.goal .quotation .txt-1:after{
+    content: "\201D";
+    position: absolute;
+    right: 820px;
+    bottom: -90px;
+    font-size: 100px;
+}
+
+.goal .quotation .txt-2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 2vw;
+}
+.goal > p{
+    font-size: 1vw;
+}
+.goal .goalText{
+    margin-top: 10vh;
+    text-align: right;
+    font-size: 1.5vw;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.goal .goalText p span{
+    color: orangered;
+}
+
+/*about section*/
+.about{
+    height: 80vh;
+}
+.about .inner{
+    position: relative;
+    height: 100%;
+}
+
+.about .aboutArea{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.about .aboutArea .infoWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+.about .aboutArea .infoWrap .aboutInfo{
+    margin: 0 auto;
+    font-size: 1.6vw;
+    /*text-align: center;*/
+}
+.about .aboutArea .infoWrap .aboutInfo li{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.about .aboutArea .infoWrap .aboutInfo li:last-child{
+    margin-bottom: 0;
+}
+.about .aboutArea .infoWrap .aboutInfo li strong{
+    display: block;
+    width: 150px;
+    font-size: 1.7vw;
+    font-weight: bold;
+}
+
+.about .aboutArea .infoWrap .skillImg{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.about .aboutArea .infoWrap .skillImg div{
+    width: 70px;
+    height: 70px;
+}
+.about .aboutArea .infoWrap .skillImg div img{
+    width: 100%;
+    height: 100%;
+}
+
+.about .aboutArea .infoWrap .aboutText{
+    font-size: 1.2vw;
+    text-align: center;
+}
+.about .aboutArea .infoWrap .aboutText p{}
+
+.about .aboutArea .imgWrap{
+    width: 500px;
+    height: 500px;
+}
+.about .aboutArea .imgWrap img{
+    width: 100%;
+    height: 100%;
+}
+
+/*contact section*/
+.contact{
+    height: 70vh;
+    background: black;
+    color: white;
+    margin-bottom: 0;
+}
+.contact .inner{
+    position: relative;
+    height: 100%;
+}
+
+.contact .contactLink{
+    /*position: absolute;*/
+    /*top: 50%;*/
+    width: 100%;
+    margin-top: 310px;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+.contact .contactLink li{
+    margin-bottom: 70px;
+}
+.contact .contactLink li:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    opacity: 0;
+    transition: 0.4s;
+}
+.contact .contactLink li:hover:after{
+    opacity: 1;
+}
+.contact .contactLink li:last-child{
+    margin-bottom: 0;
+}
+.contact .contactLink li strong{
+    align-items: center;
+}
+.contact .contactLink li strong p{
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 37px;
+    color: black;
+    background: white;
+    border-radius: 50%;
+}
+.contact .contactLink li a{
+    display: inline-block;
+    float: right;
+}
+.contact .contactLink li p img{}
+

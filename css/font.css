@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+/*font-family:'Playfair Display',serif;*/
+/*영문 명조 디스플레이*/
+
+@font-face {
+    src: url("../fonts/NanumMyeongjo.ttf");
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'NanumMyeongjo', serif;
+}
+/*영문 명조 본문*/
+
+@font-face {
+    src: url("../fonts/NanumSquareL.ttf");
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'NanumSquare', sans-serif;
+}
+/*영문 고딕*/
+
+@font-face {
+    font-family: 'GmarketSansMedium', sans-serif;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*한글 고딕*/
+
