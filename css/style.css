@@ -224,7 +224,7 @@ section .inner .titleArea h2 span{
     white-space: nowrap;
     overflow: hidden;
     margin-bottom: 150px;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 
 .textScrolling .textLeft{
