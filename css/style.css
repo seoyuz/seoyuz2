@@ -91,11 +91,11 @@ section .inner .titleArea h2 span{
     animation: flyAni 3s linear infinite;
 }
 @keyframes flyAni {
-     0%{ margin-bottom: 0px;}
+     0%{ margin-bottom: 0;}
      25%{ margin-bottom: 5px;}
      50%{ margin-bottom: 10px;}
      75%{ margin-bottom: 5px;}
-     100%{ margin-bottom: 0px;}
+     100%{ margin-bottom: 0;}
  }
 .visual .scrollDown img{
     width: 100px;
@@ -180,6 +180,7 @@ section .inner .titleArea h2 span{
 .intro .introduceArea .introTxt-3{
     margin-bottom: 0;
 }
+
 .intro .introduceArea .introTxt-3 span{
     position: relative;
 
@@ -216,7 +217,7 @@ section .inner .titleArea h2 span{
 /*}*/
 
 /*text scrolling*/
-.textScrolling{
+.textRolling{
     /*height: 1500px;*/
     padding: 150px 0;
     font-size: 48px;
@@ -227,25 +228,45 @@ section .inner .titleArea h2 span{
     /*border: 2px solid black;*/
 }
 
-.textScrolling .textLeft{
+.textRolling .textLeft{
     display: flex;
     gap: 40px;
     text-transform: uppercase;
+    animation: leftRolling 6s infinite linear;
 }
-.textScrolling .textLeft div {}
-.textScrolling .textLeft img{
+.textRolling .textLeft div {}
+.textRolling .textLeft img{
     width: 50px;
     height: 50px;
 }
-.textScrolling .textLeft span{}
+.textRolling .textLeft span{}
 
-.textScrolling .textRight{
+.textRolling .textRight{
     display: flex;
     gap: 54px;
     margin: 50px 0;
     font-family: 'Playfair Display', serif;
+    animation: rightRolling 6s infinite linear;
 }
-.textScrolling .textRight div{}
+.textRolling .textRight div{}
+
+/*text rolling animate*/
+@keyframes leftRolling{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes rightRolling{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(+100%);
+    }
+}
 
 /*project section*/
 .project{
@@ -339,10 +360,10 @@ section .inner .titleArea h2 span{
     width: 400px;
     padding: 60px 20px;
     box-sizing: border-box;
-    opacity: 0;
+    display: none;
 }
 .project .slideArea .textBoxWrap .textBox.active{
-    opacity: 1;
+    display: block;
 }
 .project .sliderWrap .textBoxWrap .textBox .textTitle{
     display: flex;
@@ -550,7 +571,7 @@ section .inner .titleArea h2 span{
 .contact .contactLink li strong{
     align-items: center;
 }
-.contact .contactLink li strong p{
+.contact .contactLink li strong span{
     display: inline-block;
     width: 33px;
     height: 33px;

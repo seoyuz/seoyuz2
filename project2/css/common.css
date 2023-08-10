@@ -1,4 +1,4 @@
-@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 
 @font-face{
     font-family: 'GmarketSansMedium';
@@ -161,7 +161,7 @@ header .headerTop .weatherLink ul{
 .headerBottom nav .headerGnb li .depth2 li a:after{
     content: "";
     display: block;
-    width: 0%;
+    width: 0;
     height: 1px;
     background-color: transparent;
     transition: 130ms;

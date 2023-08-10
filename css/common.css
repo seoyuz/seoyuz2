@@ -1,4 +1,4 @@
-
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 
 /*header*/
 header{
@@ -67,7 +67,6 @@ header.on{
 header.on .headerWrap nav .gnb li a img{
     width: 13px;
     height: 13px;
-    /*background-image: url("../images/arrow.png");*/
 }
 
 /*footer*/
@@ -77,20 +76,19 @@ header.on .headerWrap nav .gnb li a img{
     color: white;
     overflow: hidden;
 }
-.footer .textRolling{
+.footer .footerTextRolling{
     font-size: 1.9vw;
     line-height: 80px;
     color: #FE6C3B;
     text-transform: uppercase;
     white-space: nowrap;
-    animation: textRolling 6s linear infinite;
-    /*border: 2px solid red;*/
+    animation: textRolling 8s linear infinite;
 }
-.footer .textRolling p{
+.footer .footerTextRolling p{
 }
 @keyframes textRolling {
     0%{
-        transform: translateX(0);
+        transform: translateX(-90%);
     }
     100%{
         transform: translateX(+100%);
