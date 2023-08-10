@@ -89,11 +89,11 @@ main .inner{
 .container .mainContainer .mainTitleWrap .mainTitle{
     font-size: 32px;
 }
-.container .mainContainer .mainTitleWrap .mainTitlePath{
+.container .mainContainer .mainTitleWrap .breadcrumbs{
     line-height: 50px;
 }
-.container .mainContainer .mainTitleWrap .mainTitlePath i{}
-.container .mainContainer .mainTitleWrap .mainTitlePath span{}
+.container .mainContainer .mainTitleWrap .breadcrumbs i{}
+.container .mainContainer .mainTitleWrap .breadcrumbs span{}
 
 .container .mainContainer .mainContentsWrap{
     width: 842px;

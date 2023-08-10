@@ -18,13 +18,228 @@ a{
 }
 
 
+body{
+    background-color: #080424;
+    color: white;
+}
+
+section{
+    /*padding: 85px;*/
+    /*box-sizing: border-box;*/
+    margin-bottom: 50px;
+}
+
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+section h2{
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
 
 
 /*visual section*/
-
+.visual{
+    height: 1080px;
+    margin-bottom: 0;
+}
+.visual .visualWrap{
+    position: relative;
+}
+.visual .visualWrap:after{
+    content: "";
+    position: absolute;
+    display: block;
+    background: rgba(0, 0, 0, 0.4) url("../images/afunLogo.png") no-repeat center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.visual .visualWrap img{}
 
 /*banner div*/
-
+.banner{}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /*business section*/
+.business{}
+.business .businessWrap{}
+.business .businessWrap .tabArea{
+    display: flex;
+}
+.business .businessWrap .tabArea .tabTitle{
+    width: 450px;
+}
+.business .businessWrap .tabArea .tabTitle li{
+    font-size: 24px;
+    padding: 53px 15px;
+    border-bottom: 1px solid rgba(232, 232, 232, 0.4);
+    cursor: pointer;
+}
+.business .businessWrap .tabArea .tabTitle li.active{
+    color: #F24162;
+}
 
+.business .businessWrap .tabArea .tabCon{
+    position: relative;
+    width: 100%;
+}
+.business .businessWrap .tabArea .tabCon .tabContent{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    opacity: 0;
+    transition: 0.6s;
+}
+.business .businessWrap .tabArea .tabCon .tabContent.active{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+.business .businessWrap .tabArea .tabCon .tabContent .tabContentImg{
+    width: 485px;
+    height: 485px;
+    margin: 0 auto;
+    background-image: url("../images/mainTabContentImg.png");
+
+}
+.business .businessWrap .tabArea .tabCon .tabContent:nth-child(1) .tabContentImg{
+    background-position: 0 0;
+}
+.business .businessWrap .tabArea .tabCon .tabContent:nth-child(2) .tabContentImg{
+    background-position: 485px 0;
+}
+.business .businessWrap .tabArea .tabCon .tabContent:nth-child(3) .tabContentImg{
+    background-position: 0 485px;
+}
+.business .businessWrap .tabArea .tabCon .tabContent:nth-child(4) .tabContentImg{
+    background-position: 485px 485px;
+}
+.business .businessWrap .tabArea .tabCon .tabContent p{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 25px 0 12px;
+}
+.business .businessWrap .tabArea .tabCon .tabContent span{
+    position: relative;
+    margin-right: 20px;
+    color: grey;
+}
+/*.business .businessWrap .tabArea .tabCon .tabContent span:after{*/
+/*    content: "";*/
+/*    !*display: inline-block;*!*/
+/*    position: absolute;*/
+/*    left: 100%;*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*    width: 1px;*/
+/*    height: 10px;*/
+/*    background-color: grey;*/
+/*}*/
+.business .businessWrap .tabArea .tabCon .tabContent span:last-child{
+    margin-right: 0;
+}
+
+/*mainreels section*/
+.mainReels{}
+.mainReels .reelsWrap{
+    width: 1200px;
+}
+.mainReels .reelsWrap .titleArea{
+    display: flex;
+    justify-content: space-between;
+    /*margin-bottom: 20px;*/
+}
+.mainReels .reelsWrap .titleArea h2{}
+.mainReels .reelsWrap .titleArea a{
+    text-transform: capitalize;
+}
+.mainReels .reelsWrap .titleArea a:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: transparent;
+    transition: 0.4s;
+}
+.mainReels .reelsWrap .titleArea a:hover:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+.mainReels .reelsWrap .titleArea a i{
+    margin-left: 10px;
+}
+.mainReels .reelsWrap iframe{
+    width: 100%;
+}
+
+/*client rolling*/
+.clientRolling{
+    padding: 35px 0;
+    background-color: #05011c;
+}
+.clientRolling .clientRollingWrap{
+    display: flex;
+    justify-content: space-between;
+}
+.clientRolling .clientRollingWrap h2{
+    margin-bottom: 0;
+}
+.clientRolling .clientRollingWrap .clientRollingArea{
+    width: 1000px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.clientRolling .clientRollingWrap .clientRollingArea .clientLogo{
+    display: inline-block;
+    width: 150px;
+    height: 56px;
+    background-color: rgba(255, 255, 255, 0.07);
+    margin-right: 30px;
+    animation: logoRolling 2s infinite linear;
+}
+@keyframes logoRolling{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.clientRolling .clientRollingWrap .clientRollingArea .clientLogo img{
+    width: 100%;
+    height: 100%;
+}
+
+/*.clientRolling .clientRollingWrap .clientRollingArea .clientLogo:nth-child(1){*/
+/*    background-position: 0 0;*/
+/*}*/
+/*.clientRolling .clientRollingWrap .clientRollingArea .clientLogo:nth-child(2){*/
+/*    background-position: 150px 0;*/
+/*}*/
+/*.clientRolling .clientRollingWrap .clientRollingArea .clientLogo:nth-child(3){}*/
+/*.clientRolling .clientRollingWrap .clientRollingArea .clientLogo:nth-child(4){}*/
+/*.clientRolling .clientRollingWrap .clientRollingArea .clientLogo:nth-child(5){}*/
+/*.clientRolling .clientRollingWrap .clientRollingArea .clientLogo:nth-child(6){}*/
+/*.clientRolling .clientRollingWrap .clientRollingArea .clientLogo:nth-child(7){}*/
+/*.clientRolling .clientRollingWrap .clientRollingArea .clientLogo:nth-child(8){}*/
+/*.clientRolling .clientRollingWrap .clientRollingArea .clientLogo:nth-child(9){}*/
+/*.clientRolling .clientRollingWrap .clientRollingArea .clientLogo:nth-child(10){}*/
+
+banner

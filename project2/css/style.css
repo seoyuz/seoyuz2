@@ -162,8 +162,8 @@ body{
 .scMain .mainLeft .quickTabArea .quickTabCon .quickTabContent:nth-child(1){
     /*display: none;*/
 }.scMain .mainLeft .quickTabArea .quickTabCon .quickTabContent:nth-child(2){
-    /*display: none;*/
-}
+     /*display: none;*/
+ }
 
 
 .scMain .mainWrap .mainRight{
@@ -448,7 +448,7 @@ body{
     display: flex;
     justify-content: space-between;
     /*height: 300px;*/
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 .sc3 .sc3Wrap .newsTabArea,
 .sc3 .sc3Wrap .snsTabArea{
@@ -503,7 +503,9 @@ body{
 .sc3 .sc3Wrap .snsTabArea .snsTabCon .snsTabContent{
     width: 227px;
     height: 165px;
-    border: 1px solid black;
+    padding: 45px 0;
+    box-sizing: border-box;
+    /*border: 1px solid black;*/
 }
 .sc3 .sc3Wrap .newsTabArea .newsTabCon .newsTabContent img,
 .sc3 .sc3Wrap .snsTabArea .snsTabCon .snsTabContent img{
