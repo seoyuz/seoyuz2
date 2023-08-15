@@ -104,7 +104,7 @@ body{
 }
 .scMain .mainLeft .quickTabArea .quickTabTitle li{
     /*padding: 10px 15px;*/
-    width: 220px;
+    width: 240px;
     height: 40px;
     text-align: center;
     line-height:40px;
@@ -115,8 +115,10 @@ body{
 }
 .scMain .mainLeft .quickTabArea .quickTabTitle li.active{
     background: #003f98;
+    width: 260px;
     /*padding-bottom: 5px;*/
     height: 50px;
+    font-size: 18px;
     color: white;
 }
 .scMain .mainLeft .quickTabArea .quickTabCon{
@@ -424,6 +426,8 @@ body{
     height: 55px;
     line-height: 55px;
     background: #e75924;
+    font-size: 18px;
+    color: #fff;
 }
 .sc2 .sc2Wrap .boardArea .tabs li.active:before{
     content: "";
@@ -477,6 +481,7 @@ body{
     width: 120px;
     height: 25px;
     background: #003f98;
+    font-size: 18px;
     color: white;
 }
 
@@ -510,6 +515,8 @@ body{
 .sc3 .sc3Wrap .newsTabArea .newsTabCon .newsTabContent img,
 .sc3 .sc3Wrap .snsTabArea .snsTabCon .snsTabContent img{
     display: block;
+    width: 227px;
+    height: 138px;
     margin-bottom: 10px;
 }
 .sc3 .sc3Wrap .newsTabArea .newsTabCon .newsTabContent a{}
