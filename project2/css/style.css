@@ -387,7 +387,7 @@ body{
     -webkit-line-clamp: 1;
     overflow: hidden;
 }
-.sc2 .sc2Wrap .boardArea .boardBox .noticeBoard .noticeList li a:hover:after{
+.sc2 .sc2Wrap .boardArea .boardBox .noticeBoard.active .noticeList li:hover:after{
     content: "";
     position: absolute;
     left: 0;

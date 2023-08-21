@@ -11,8 +11,9 @@
 /*header*/
 header{
     position: fixed;
+    top: 0;
     width: 100%;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.85);
     z-index: 999;
 }
 .headerWrap{
@@ -35,7 +36,7 @@ header{
 .headerWrap nav{
     width: 1200px;
     margin: 0 auto;
-    /*border: 2px solid blue;*/
+    border: 2px solid blue;
 }
 .headerWrap nav ul{
     display: flex;
@@ -60,11 +61,12 @@ header{
     height: 5px;
     background-color: #F24162;
 }
-
 .headerWrap nav ul li a{}
 
 /*footer*/
-footer{}
+footer{
+    background-color: black;
+}
 footer .footerSns{}
 footer .footerSns .snsWrap{
     display: flex;
@@ -112,7 +114,6 @@ footer .footerInfo{
     display: flex;
     align-items: center;
     height: 220px;
-    background-color: black;
 }
 footer .footerInfo .footerInfoWrap{
     display: flex;

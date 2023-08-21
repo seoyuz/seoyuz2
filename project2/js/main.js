@@ -38,7 +38,6 @@ $(".quickTabArea .quickTabTitle li").on("click", function () {
     $(this).addClass("active");
     $(this).siblings().removeClass("active");
     let index = $(this).index();
-    console.log(index);
 
     $(".quickTabArea .quickTabCon .quickTabContent").eq(index).addClass("active");
     $(".quickTabArea .quickTabCon .quickTabContent").eq(index).siblings().removeClass("active");

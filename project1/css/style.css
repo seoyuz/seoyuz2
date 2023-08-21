@@ -1,13 +1,9 @@
 @import url("../css/common.css");
 
 
-body{
-    font-family: 'Pretendard-Regular', sans-serif;
-}
+body{ font-family: 'Pretendard-Regular', sans-serif; }
 
-a{
-    text-decoration: none;
-}
+a{ text-decoration: none; }
 
 *{
     margin: 0;
@@ -26,7 +22,7 @@ body{
 section{
     /*padding: 85px;*/
     /*box-sizing: border-box;*/
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 
 .inner{
@@ -44,7 +40,7 @@ section h2{
 /*visual section*/
 .visual{
     height: 1080px;
-    margin-bottom: 0;
+    /*margin-bottom: 0;*/
 }
 .visual .visualWrap{
     position: relative;
@@ -53,14 +49,16 @@ section h2{
     content: "";
     position: absolute;
     display: block;
-    background: rgba(0, 0, 0, 0.4) url("../images/afunLogo.png") no-repeat center;
+    background: rgba(0, 0, 0, 0.45) url("../images/afunLogo.png") no-repeat center;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     z-index: 10;
 }
-.visual .visualWrap img{}
+.visual .visualWrap video{
+    width: 100%;
+}
 
 /*banner div*/
 .banner{}
@@ -184,8 +182,13 @@ section h2{
 .mainReels .reelsWrap .titleArea a i{
     margin-left: 10px;
 }
-.mainReels .reelsWrap iframe{
+.mainReels .reelsWrap .reelArea{
+    width: 1200px;
+    height: 700px;
+}
+.mainReels .reelsWrap .reelArea iframe{
     width: 100%;
+    height: 100%;
 }
 
 /*client rolling*/
@@ -212,7 +215,7 @@ section h2{
     height: 56px;
     background-color: rgba(255, 255, 255, 0.07);
     margin-right: 30px;
-    animation: logoRolling 2s infinite linear;
+    animation: logoRolling 5s infinite linear;
 }
 @keyframes logoRolling{
     0%{
