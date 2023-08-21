@@ -36,7 +36,6 @@ header{
 .headerWrap nav{
     width: 1200px;
     margin: 0 auto;
-    border: 2px solid blue;
 }
 .headerWrap nav ul{
     display: flex;

@@ -58,6 +58,7 @@ section h2{
 .titleWrap .deemed .title{
     font-size: 58px;
     line-height: 120px;
+    margin-left: 50px;
 }
 
 /*about section*/
@@ -81,6 +82,116 @@ section h2{
 .about .aboutWrap .aboutContainer p:last-child{
     margin-bottom: 0;
 }
+
+/*history*/
+
+
+
+/*clients*/
+.clients{}
+.clients .clientsWrap{}
+.clients .clientsWrap .logos{
+    padding: 20px 55px;
+}
+.clients .clientsWrap .logos > div{
+    display: flex;
+    margin-bottom: 60px;
+    justify-content: space-between;
+}
+.clients .clientsWrap .logos .logo{
+    width: 210px;
+    height: 120px;
+    background-image: url("../images/clientsLogo.png");
+}
+
+.clients .clientsWrap .logos .logo-1 .logo:first-child{
+    background-position: 0 0;
+}
+.clients .clientsWrap .logos .logo-1 .logo:nth-child(2){
+    background-position: -210px 0;
+}
+.clients .clientsWrap .logos .logo-1 .logo:nth-child(3){
+    background-position: -420px 0;
+}
+.clients .clientsWrap .logos .logo-1 .logo:nth-child(4){
+    background-position: -630px 0;
+}
+
+.clients .clientsWrap .logos .logo-2 .logo:first-child{
+    background-position: -840px 0;
+}
+.clients .clientsWrap .logos .logo-2 .logo:nth-child(2){
+    background-position: 0 -120px;
+}
+.clients .clientsWrap .logos .logo-2 .logo:nth-child(3){
+    background-position: -210px -120px;
+}
+.clients .clientsWrap .logos .logo-2 .logo:nth-child(4){
+    background-position: -420px -120px;
+}
+
+.clients .clientsWrap .logos .logo-3 .logo:first-child{
+    background-position: -630px -120px;
+}
+.clients .clientsWrap .logos .logo-3 .logo:nth-child(2){
+    background-position: -840px -120px;
+}
+.clients .clientsWrap .logos .logo-3 .logo:nth-child(3){
+    background-position: 0 -240px;
+}
+.clients .clientsWrap .logos .logo-3 .logo:nth-child(4){
+    background-position: -210px -240px;
+}
+
+.clients .clientsWrap .logos .logo-4 .logo:first-child{
+    background-position: -420px -240px;
+}
+.clients .clientsWrap .logos .logo-4 .logo:nth-child(2){
+    background-position: -630px -240px;
+}
+.clients .clientsWrap .logos .logo-4 .logo:nth-child(3){
+    background-position: -840px -240px;
+}
+.clients .clientsWrap .logos .logo-4 .logo:nth-child(4){
+    background-position: 0 -360px;
+}
+
+.clients .clientsWrap .logos .logo-5 .logo:first-child{
+    background-position: -210px -360px;
+}
+.clients .clientsWrap .logos .logo-5 .logo:nth-child(2){
+    background-position: -420px -360px;
+}
+.clients .clientsWrap .logos .logo-5 .logo:nth-child(3){
+    background-position: -630px -360px;
+}
+.clients .clientsWrap .logos .logo-5 .logo:nth-child(4){
+    background-position: -840px -360px;
+}
+
+.clients .clientsWrap .logos .logo-6 .logo:first-child{
+    background-position: 0 -480px;
+}
+.clients .clientsWrap .logos .logo-6 .logo:nth-child(2){
+    background-position: -210px -480px;
+}
+.clients .clientsWrap .logos .logo-6 .logo:nth-child(3){
+    background-position: -420px -480px;
+}
+.clients .clientsWrap .logos .logo-6 .logo:nth-child(4){
+    background-position: -640px -480px;
+}
+
+.clients .clientsWrap .logos .logo-7 .logo:first-child{
+    background-position: -840px -480px;
+}
+.clients .clientsWrap .logos .logo-7 .logo:nth-child(2){
+    background-position: 0 -600px;
+}
+.clients .clientsWrap .logos .logo-7 .logo:nth-child(3){
+    background-position: -210px -600px;
+}
+
 
 
 
