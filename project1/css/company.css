@@ -1,66 +1,8 @@
 @import url("../css/common.css");
 
 
-body{ font-family: 'Pretendard-Regular', sans-serif; }
-
-a{ text-decoration: none; }
-
-*{
-    margin: 0;
-    padding: 0;
-    color: inherit;
-    font-weight: normal;
-    font-size: inherit;
-}
-
-body{
-    background-color: #080424;
-    color: white;
-}
-
-section{
-    /*padding: 85px;*/
-    /*box-sizing: border-box;*/
-    margin-bottom: 150px;
-}
-
-.inner{
-    width: 1200px;
-    margin: 0 auto;
-}
-section h2{
-    font-size: 48px;
-    font-weight: bold;
-    text-transform: capitalize;
-    margin-bottom: 30px;
-}
 
 /*main*/
-.titleWrap{
-    margin-top: 100px;
-}
-.titleWrap .inner{
-    position: relative;
-}
-.titleWrap img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-.titleWrap .deemed{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 120px;
-    background: rgba(0, 0, 0, 0.8);
-}
-.titleWrap .deemed .title{
-    font-size: 58px;
-    line-height: 120px;
-    margin-left: 50px;
-}
-
 /*about section*/
 .about{}
 .about .aboutWrap{}
@@ -84,7 +26,80 @@ section h2{
 }
 
 /*history*/
-
+.history{
+    background-color: #261E59;
+    padding: 60px 0;
+}
+.history .historyArea{
+    position: relative;
+    height: 650px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.history .historyArea:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 240px;
+    height: 5px;
+    background: #F24162;
+}
+.history .historyArea .historyTab{
+    position: absolute;
+    left: 150px;
+    top: 50px;
+    display: flex;
+    gap: 50px;
+}
+.history .historyArea .historyTab li{
+    position: relative;
+    font-size: 32px;
+    cursor: pointer;
+}
+.history .historyArea .historyTab li:hover:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #F24162;
+}
+.history .historyArea .historyTab li.active:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #F24162;
+}
+.history .historyArea .historyCon{
+    position: absolute;
+    left: 150px;
+    top: 160px;
+    display: none;
+    line-height: 1.9;
+}
+.history .historyArea .historyCon.active{
+    display: block;
+}
+.history .historyArea .historyCon div{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 17px;
+    margin-right: 180px;
+}
+.history .historyArea .historyCon div:last-child{
+    margin-right: 0;
+}
+.history .historyArea .historyCon div p{
+    font-size: 20px;
+    margin-bottom: 100px;
+}
 
 
 /*clients*/

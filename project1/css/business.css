@@ -1,0 +1,118 @@
+@import url("../css/common.css");
+
+/*main*/
+
+/*process*/
+.process{}
+.process .processWrap{
+    position: relative;
+    display: flex;
+    margin: 150px auto 30px;
+    width: 860px;
+}
+.process .processWrap div{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 200px;
+    margin-right: -35px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+.process .processWrap div:last-child{
+    margin-right: 0;
+}
+.process .processWrap div:hover{
+    margin-top: -116px;
+}
+.process .processWrap div:first-child{
+    border-color: #65A3FF;
+    color: #65A3FF;
+}
+.process .processWrap div:nth-child(2){
+    border-color: #C994FF;
+    color: #C994FF;
+}
+.process .processWrap div:nth-child(3){
+    border-color: #EBB6BF;
+    color: #EBB6BF;
+}
+.process .processWrap div:nth-child(4){
+    border-color: #CED05E;
+    color: #CED05E;
+}
+.process .processWrap div:last-child{
+    border-color: #B5EDFF;
+    color: #B5EDFF;
+}
+.process p{
+    /*margin-top: 30px;*/
+    text-align: center;
+    line-height: 1.5;
+}
+
+/*area*/
+.area{}
+.area .areaWrap{
+    margin: 0 auto;
+    width: 1000px;
+}
+.area .areaWrap .areaContent{
+    margin-bottom: 100px;
+}
+.area .areaWrap .areaContent img{
+    display: block;
+    margin: 0 auto;
+}
+.area .areaWrap .areaContent .contentTxt{
+    text-align: center;
+    line-height: 1.7;
+}
+.area .areaWrap .areaContent .contentTxt strong{
+    display: block;
+    font-size: 28px;
+}
+.area .areaWrap .areaContent .contentTxt span{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 14px;
+    color: #99999B;
+}
+.area .areaWrap .areaContent .contentTxt span:last-child{
+    margin-right: 0;
+}
+.area .areaWrap .areaContent .contentTxt p{}
+
+.area .areaWrap .areaBoxes{}
+.area .areaWrap .areaBoxes .areaBox{
+    display: flex;
+    margin-bottom: 100px;
+}
+.area .areaWrap .areaBoxes .areaBox img{}
+.area .areaWrap .areaBoxes .areaBox .areaBoxTxt{
+    margin-left: 27px;
+    line-height: 1.9;
+}
+.area .areaWrap .areaBoxes .areaBox .areaBoxTxt strong{
+    display: block;
+    font-size: 30px;
+    margin-top: 27px;
+}
+.area .areaWrap .areaBoxes .areaBox .areaBoxTxt span{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 13px;
+    color: #99999B;
+}
+.area .areaWrap .areaBoxes .areaBox .areaBoxTxt span:last-child{
+    margin-right: 0;
+}
+.area .areaWrap .areaBoxes .areaBox .areaBoxTxt p{}
+.area .areaWrap .areaBoxes .areaBox:nth-child(2){
+    /*text-align: center;*/
+}
+.area .areaWrap .areaBoxes .areaBox:nth-child(2) .areaBoxTxt{
+    margin-left: 0;
+    margin-right: 27px;
+}

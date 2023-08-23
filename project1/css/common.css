@@ -7,6 +7,39 @@
     font-style: normal;
 }
 
+body{ font-family: 'Pretendard-Regular', sans-serif; }
+
+a{ text-decoration: none; }
+
+*{
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-weight: normal;
+    font-size: inherit;
+}
+
+body{
+    background-color: #080424;
+    color: white;
+}
+
+section{
+    /*padding: 85px;*/
+    /*box-sizing: border-box;*/
+    margin-bottom: 150px;
+}
+
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+section h2{
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
 
 /*header*/
 header{
@@ -34,7 +67,7 @@ header{
 }
 
 .headerWrap nav{
-    width: 1200px;
+    width: 900px;
     margin: 0 auto;
 }
 .headerWrap nav ul{
@@ -128,4 +161,30 @@ footer .footerInfo .footerInfoWrap .address p{
 }
 footer .footerInfo .footerInfoWrap .address p span{
     margin-right: 50px;
+}
+
+/*sub page*/
+.titleWrap{
+    margin-top: 100px;
+}
+.titleWrap .inner{
+    position: relative;
+}
+.titleWrap img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.titleWrap .deemed{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background: rgba(0, 0, 0, 0.8);
+}
+.titleWrap .deemed .title{
+    font-size: 58px;
+    line-height: 120px;
+    margin-left: 50px;
 }
