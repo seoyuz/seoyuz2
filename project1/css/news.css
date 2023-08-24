@@ -1,0 +1,94 @@
+@import url("../css/common.css");
+
+/*main*/
+.news{}
+.newsWrap{
+    position: relative;
+}
+.newsWrap .newsCon{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+}
+.newsWrap .newsCon .newsContents{
+    width: 320px;
+    /*height: 440px;*/
+}
+.newsWrap .newsCon .newsContents .thumbArea{
+    width: 100%;
+    height: 180px;
+    margin-bottom: 7px;
+}
+.newsWrap .newsCon .newsContents .thumbArea img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.newsWrap .newsCon .newsContents .articleArea{
+    padding: 8px 10px;
+    box-sizing: border-box;
+}
+.newsWrap .newsCon .newsContents .articleArea .title{
+    margin-bottom: 35px;
+    font-size: 26px;
+    line-height: 1.3;
+    border-bottom: 2px solid #fff;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.newsWrap .newsCon .newsContents .articleArea .desc{
+    height: 125px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.4;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+}
+.newsWrap .newsCon .newsContents .articleArea .date{}
+.newsWrap .newsCon .newsContents .articleArea a{
+    float: right;
+}
+.newsWrap .newsCon .newsContents .articleArea a:hover::after{
+    content: "";
+    text-decoration: underline 1px solid #fff;
+}
+.newsWrap .newsCon .newsContents .articleArea .date,
+.newsWrap .newsCon .newsContents .articleArea a{
+    font-size: 14px;
+}
+
+.pageArea{
+    display: flex;
+    justify-content: center;
+    gap: 95px;
+}
+.pageArea .prev,
+.pageArea .next{
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.pageArea .pagenation{
+    font-size: 24px;
+    text-align: center;
+    color: #ABA6CA;
+}
+.pageArea .pagenation span{
+    margin-right: 25px;
+    cursor: pointer;
+}
+.pageArea .pagenation span:last-child{
+    margin-right: 0;
+}
+.pageArea .pagenation span.active{
+    color: #fff;
+}
