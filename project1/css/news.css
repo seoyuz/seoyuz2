@@ -62,6 +62,7 @@
 .newsWrap .newsCon .newsContents .articleArea .date,
 .newsWrap .newsCon .newsContents .articleArea a{
     font-size: 14px;
+    text-transform: uppercase;
 }
 
 .pageArea{
