@@ -57,7 +57,7 @@ $(function() {
 
     let scrollTop = 0;
     function scrollHeaderEvent() {
-        if (scrollTop > 780) {
+        if (scrollTop > 1910) {
             $(".header").addClass("on");
             $(".header .gnb").find("img").attr("src", "../images/arrow.png");
         } else {
@@ -68,8 +68,9 @@ $(function() {
     }
     scrollHeaderEvent();
 
+const $projectSlider = $("#projectSlider");
 
-    $("#projectSlider").on("init", function (event, slick) {
+    $projectSlider.on("init", function (event, slick) {
         $(".textBoxWrap").find(".textBox").eq(slick.currentSlide).addClass("active");
 
         // $(".project").find(".pageCount").text( `${slick.currentSlide + 1} / ${slick.slideCount}` );
@@ -77,7 +78,7 @@ $(function() {
         $(".project").find(".progressBar").css("width", ratio);
     });
 
-    $("#projectSlider").slick({
+    $projectSlider.slick({
         arrows: true,
         prevArrow: $(".slideArea .arrowWrap").find(".prevArrow"),
         nextArrow: $(".slideArea .arrowWrap").find(".nextArrow"),
@@ -93,7 +94,7 @@ $(function() {
         }
     });
 
-    $("#projectSlider").on("beforeChange", function (event, slick, current, next) {
+    $projectSlider.on("beforeChange", function (event, slick, current, next) {
         $(".textBoxWrap").find(".textBox").eq(next).addClass("active");
         $(".textBoxWrap").find(".textBox").eq(next).siblings().removeClass("active");
 

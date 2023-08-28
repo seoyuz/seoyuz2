@@ -14,15 +14,15 @@ header{
     z-index: 9999;
 }
 header .headerWrap{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
 }
 header .headerWrap h1{
-    position: absolute;
-    left: 55px;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-left: 55px;
 }
 header .headerWrap h1 a{
-    display: block;
+    display: inline-block;
     width: 55px;
     height: 25px;
 
@@ -52,10 +52,7 @@ header .headerWrap nav .gnb li a img{
 }
 
 header .headerWrap .darkMode{
-    position: absolute;
-    right: 55px;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-right: 55px;
 } /*다크모드하는법 : 바디태그에 클래스를 주고 색상 내용 바꿔준다음 toggleClass 로 온오프*/
 
 /*hover*/
@@ -98,4 +95,14 @@ header.on .headerWrap nav .gnb li a img{
     height: 20px;
     text-align: center;
     line-height: 20px;
+}
+
+
+@media (max-width: 768px) {
+    header .headerWrap h1{
+        margin-left: 10px;
+    }
+    header .headerWrap .darkMode{
+        margin-right: 10px;
+    }
 }
