@@ -234,10 +234,15 @@ section .inner .titleArea h2 span{
     text-transform: uppercase;
     animation: leftRolling 6s infinite linear;
 }
-.textRolling .textLeft div {}
+.textRolling .textLeft div {
+    display: flex;
+    vertical-align: middle;
+}
 .textRolling .textLeft img{
+    display: inline-block;
     width: 50px;
     height: 50px;
+    line-height: 50px;
 }
 .textRolling .textLeft span{}
 
@@ -246,7 +251,7 @@ section .inner .titleArea h2 span{
     gap: 54px;
     margin: 50px 0;
     font-family: 'Playfair Display', serif;
-    animation: rightRolling 6s infinite linear;
+    animation: rightRolling 9s infinite linear;
 }
 .textRolling .textRight div{}
 
@@ -256,15 +261,15 @@ section .inner .titleArea h2 span{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(-100%);
+        transform: translateX(-60%);
     }
 }
 @keyframes rightRolling{
     0%{
-        transform: translateX(0);
+        transform: translateX(-100%);
     }
     100%{
-        transform: translateX(+100%);
+        transform: translateX(0);
     }
 }
 
@@ -532,7 +537,7 @@ section .inner .titleArea h2 span{
 
 /*contact section*/
 .contact{
-    height: 70vh;
+    height: 550px;
     background: black;
     color: white;
     margin-bottom: 0;
@@ -546,7 +551,7 @@ section .inner .titleArea h2 span{
     /*position: absolute;*/
     /*top: 50%;*/
     width: 100%;
-    margin-top: 310px;
+    margin-top: 250px;
     font-size: 38px;
     text-transform: uppercase;
 }
