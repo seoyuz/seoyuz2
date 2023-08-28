@@ -19,8 +19,6 @@ a{
 section{
     margin-bottom: 150px;
     overflow: hidden;
-    border: 5px solid green;
-    box-sizing: border-box;
 }
 section .scNum{
     position: absolute;
@@ -381,6 +379,8 @@ section .inner .titleArea h2 span{
     justify-content: space-between;
     font-size: 32px;
     margin-bottom: 40px;
+    /*transform: translateX(-20px);*/
+    /*transition: 0.2s;*/
 }
 .project .sliderWrap .textBoxWrap .textBox .textTitle h3{
     text-transform: capitalize;
@@ -392,8 +392,11 @@ section .inner .titleArea h2 span{
 .project .slideArea .textBoxWrap .textBox .desc{
     line-height: 1.5;
     margin-bottom: 100px;
+    /*transition-delay: 0.4s;*/
 }
-.project .slideArea .textBoxWrap .textBox .link{}
+.project .slideArea .textBoxWrap .textBox .link{
+    /*transition-delay: 0.6s;*/
+}
 
 .project .slideArea .textBoxWrap .textBox .link a{}
 
@@ -422,6 +425,7 @@ section .inner .titleArea h2 span{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 15px;
     font-family: 'Playfair Display',serif;
     font-size: 3vw;
     font-weight: bold;
@@ -442,7 +446,7 @@ section .inner .titleArea h2 span{
 .goal .quotation .txt-1:after{
     content: "\201D";
     position: absolute;
-    right: 800px;
+    right: 500px;
     bottom: -100px;
     font-size: 100px;
 }
@@ -528,7 +532,7 @@ section .inner .titleArea h2 span{
 }
 
 .about .aboutArea .infoWrap .aboutText{
-    font-size: 1.2vw;
+    font-size: 1.6vw;
     text-align: center;
 }
 .about .aboutArea .infoWrap .aboutText p{}
@@ -598,9 +602,10 @@ section .inner .titleArea h2 span{
     display: inline-block;
     float: right;
 }
-.contact .contactLink li p img{}
+.contact .contactLink li a img{}
 
 /*반응형*/
+/*tablet*/
 @media (max-width: 768px) {
     .inner{
         width: 600px;
@@ -711,6 +716,24 @@ section .inner .titleArea h2 span{
     .project .slideArea .textBoxWrap .textBox .link a{
         font-size: 12px;
     }
+    /*goal*/
+    .goal{
+        padding: 50px;
+    }
+    .goal .quotation{
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+    .goal .quotation .txt-1:before{
+         left: -90px;
+         top: -30px;
+         font-size: 80px;
+     }
+    .goal .quotation .txt-1:after{
+        right: 240px;
+        bottom: -100px;
+        font-size: 80px;
+    }
 
     /*about*/
     .about{
@@ -727,10 +750,188 @@ section .inner .titleArea h2 span{
     .about .aboutArea .infoWrap{
         gap: 35px;
     }
+    .about .aboutArea .infoWrap .aboutInfo,
+    .about .aboutArea .infoWrap .aboutInfo li strong{
+        font-size: 18px;
+    }
 
     .about .aboutArea .infoWrap .skillImg{
-        display: flex;
-        justify-content: center;
+        gap: 30px;
+    }
+    .about .aboutArea .infoWrap .skillImg div{
+        width: 35px;
+        height: 35px;
+    }
+    .about .aboutArea .infoWrap .skillImg div img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .about .aboutArea .infoWrap .aboutText{
+        line-height: 1.5;
+    }
+    .about .aboutArea .infoWrap .aboutText p{}
+
+    .about .aboutArea .imgWrap{
+        width: 250px;
+        height: 250px;
+    }
+
+    /*contact section*/
+    .contact{
+        height: 450px;
+    }
+
+    .contact .contactLink{
+        /*position: absolute;*/
+        /*top: 50%;*/
+        margin-top: 200px;
+        font-size: 20px;
+    }
+    .contact .contactLink li strong span{
+        width: 25px;
+        height: 25px;
+        font-size: 18px;
+        line-height: 25px;
+        margin-left: 8px;
+    }
+    .contact .contactLink li a img{
+        width: 15px;
+        height: 15px;
+    }
+}
+/*mobile*/
+@media (max-width: 430px) {
+    .inner{
+        width: 300px;
+    }
+    section .scNum{
+        font-size: 100px;
+    }
+    section .inner .titleArea h2{
+        font-size: 32px;
+    }
+
+    /*intro*/
+    .intro{
+        height: 500px;
+    }
+    .intro .introduceArea{
+        width: 100%;
+        padding: 150px 0;
+    }
+    .intro .introduceArea .introImg{
+        width: 120px;
+        height: 180px;
+    }
+    .intro .introduceArea .introTxt-1 .introImg{
+        right: 0;
+        top: 0;
+    }
+    .intro .introduceArea .introTxt-3 .introImg {
+        left: 0;
+        bottom: 0;
+    }
+
+    /*project*/
+    .project{
+        height: 450px;
+    }
+    .project .inner{
+        position: relative;
+        /*height: 100%;*/
+        border: 2px solid red;
+        box-sizing: border-box;
+    }
+
+    .project .titleArea .dotWrap .customDots{
+        font-size: 10px;
+    }
+
+    .project .slideArea{
+        position: absolute;
+        width: 300px;
+        bottom: 0;
+    }
+
+    .project .slideArea .sliderWrap{
+        position: relative;
+        width: 300px;
+        /*left: 50%;*/
+        /*bottom: 0;*/
+        /*transform: translateX(-50%);*/
+    }
+    .project .slideArea .sliderWrap .projectSlider .slick-slide{
+        width: 200px;
+    }
+    .project .slideArea .sliderWrap .projectSlider .slick-slide img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .project .sliderWrap .textBoxWrap{
+        width: 100px;
+    }
+    .project .sliderWrap .textBoxWrap .textBox{
+        width: 100px;
+        padding: 13px 10px;
+    }
+    .project .sliderWrap .textBoxWrap .textBox .textTitle{
+        font-size: 13px;
+        margin-bottom: 13px;
+    }
+    .project .sliderWrap .textBoxWrap .textBox .textTitle h3{
+        font-size: 14px;
+    }
+    .project .slideArea .textBoxWrap .textBox .desc{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    .project .slideArea .textBoxWrap .textBox .link a{
+        font-size: 12px;
+    }
+    /*goal*/
+    .goal{
+        padding: 50px;
+    }
+    .goal .quotation{
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+    .goal .quotation .txt-1:before{
+         left: -90px;
+         top: -30px;
+         font-size: 80px;
+     }
+    .goal .quotation .txt-1:after{
+        right: 240px;
+        bottom: -100px;
+        font-size: 80px;
+    }
+
+    /*about*/
+    .about{
+        height: 800px;
+        border: 2px solid red;
+    }
+
+    .about .aboutArea{
+        bottom: 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 70px;
+    }
+    .about .aboutArea .infoWrap{
+        gap: 35px;
+    }
+    .about .aboutArea .infoWrap .aboutInfo,
+    .about .aboutArea .infoWrap .aboutInfo li strong{
+        font-size: 18px;
+    }
+
+    .about .aboutArea .infoWrap .skillImg{
         gap: 30px;
     }
     .about .aboutArea .infoWrap .skillImg div{
