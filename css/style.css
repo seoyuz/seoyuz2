@@ -436,20 +436,20 @@ section .inner .titleArea h2 span{
 .goal .quotation p{}
 
 .goal .quotation .txt-1{}
-.goal .quotation .txt-1:before{
-    content: '\201C';
-    position: absolute;
-    left: -110px;
-    top: -30px;
-    font-size: 100px;
-}
-.goal .quotation .txt-1:after{
-    content: "\201D";
-    position: absolute;
-    right: 500px;
-    bottom: -100px;
-    font-size: 100px;
-}
+/*.goal .quotation .txt-1:before{*/
+/*    content: '\201C';*/
+/*    position: absolute;*/
+/*    left: -110px;*/
+/*    top: -30px;*/
+/*    font-size: 100px;*/
+/*}*/
+/*.goal .quotation .txt-1:after{*/
+/*    content: "\201C";*/
+/*    position: absolute;*/
+/*    right: 500px;*/
+/*    bottom: -100px;*/
+/*    font-size: 100px;*/
+/*}*/
 
 .goal .quotation .txt-2{
     position: absolute;
@@ -475,7 +475,6 @@ section .inner .titleArea h2 span{
 /*about section*/
 .about{
     height: 870px;
-    border: 2px solid red;
 }
 .about .inner{
     position: relative;
@@ -738,7 +737,6 @@ section .inner .titleArea h2 span{
     /*about*/
     .about{
         height: 800px;
-        border: 2px solid red;
     }
 
     .about .aboutArea{
@@ -805,11 +803,18 @@ section .inner .titleArea h2 span{
     .inner{
         width: 300px;
     }
+    section{
+        margin-bottom: 90px;
+    }
     section .scNum{
+        right: -18px;
         font-size: 100px;
     }
     section .inner .titleArea h2{
         font-size: 32px;
+    }
+    .visual{
+        height: 600px;
     }
 
     /*intro*/
@@ -833,15 +838,51 @@ section .inner .titleArea h2 span{
         bottom: 0;
     }
 
+    /*text scrolling*/
+    .textRolling{
+        padding: 35px 0;
+        font-size: 24px;
+        margin-bottom: 110px;
+    }
+
+    .textRolling .textLeft{
+        gap: 18px;
+    }
+    .textRolling .textLeft img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .textRolling .textRight{
+        gap: 18px;
+        margin: 30px 0;
+        animation: rightRolling 4s infinite linear;
+    }
+
+    /*text rolling animate*/
+    @keyframes leftRolling{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-68%);
+        }
+    }
+    @keyframes rightRolling{
+        0%{
+            transform: translateX(-68%);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+
     /*project*/
     .project{
-        height: 450px;
+        height: 500px;
     }
     .project .inner{
         position: relative;
-        /*height: 100%;*/
-        border: 2px solid red;
-        box-sizing: border-box;
     }
 
     .project .titleArea .dotWrap .customDots{
@@ -849,7 +890,6 @@ section .inner .titleArea h2 span{
     }
 
     .project .slideArea{
-        position: absolute;
         width: 300px;
         bottom: 0;
     }
@@ -857,36 +897,38 @@ section .inner .titleArea h2 span{
     .project .slideArea .sliderWrap{
         position: relative;
         width: 300px;
-        /*left: 50%;*/
-        /*bottom: 0;*/
-        /*transform: translateX(-50%);*/
+        height: 300px;
+    }
+    .project .slideArea .sliderWrap .projectSlider{
+        position: absolute;
+        top: 0;
+        width: 100%;
     }
     .project .slideArea .sliderWrap .projectSlider .slick-slide{
-        width: 200px;
-    }
-    .project .slideArea .sliderWrap .projectSlider .slick-slide img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        width: 300px;
     }
 
     .project .sliderWrap .textBoxWrap{
-        width: 100px;
+        position: absolute;
+        top: 100%;
+        transform: translateY(-100%);
+        width: 100%;
+        height: 140px;
     }
     .project .sliderWrap .textBoxWrap .textBox{
-        width: 100px;
-        padding: 13px 10px;
+        width: 100%;
+        padding: 10px 8px;
     }
     .project .sliderWrap .textBoxWrap .textBox .textTitle{
-        font-size: 13px;
+        font-size: 12px;
         margin-bottom: 13px;
     }
     .project .sliderWrap .textBoxWrap .textBox .textTitle h3{
         font-size: 14px;
     }
     .project .slideArea .textBoxWrap .textBox .desc{
-        font-size: 10px;
-        margin-bottom: 10px;
+        font-size: 12px;
+        margin-bottom: 12px;
     }
 
     .project .slideArea .textBoxWrap .textBox .link a{
@@ -900,43 +942,58 @@ section .inner .titleArea h2 span{
         line-height: 1.6;
         margin-bottom: 30px;
     }
+    .goal .quotation .txt-1{
+        font-size: 15px;
+        color: rgba(182, 182, 182, 0.8);
+    }
     .goal .quotation .txt-1:before{
-         left: -90px;
-         top: -30px;
-         font-size: 80px;
+         left: -52px;
+         top: -16px;
+         font-size: 48px;
      }
     .goal .quotation .txt-1:after{
-        right: 240px;
-        bottom: -100px;
-        font-size: 80px;
+        right: 72px;
+        bottom: -60px;
+        font-size: 48px;
+    }
+    .goal .quotation .txt-2{
+        font-size: 12px;
+        color: rgba(182, 182, 182, 0.8);
     }
 
     /*about*/
     .about{
-        height: 800px;
-        border: 2px solid red;
+        height: 600px;
     }
 
     .about .aboutArea{
         bottom: 0;
         flex-direction: column-reverse;
         align-items: center;
-        gap: 70px;
+        gap: 25px;
     }
     .about .aboutArea .infoWrap{
-        gap: 35px;
+        gap: 20px;
     }
     .about .aboutArea .infoWrap .aboutInfo,
     .about .aboutArea .infoWrap .aboutInfo li strong{
-        font-size: 18px;
+        font-size: 14px;
+    }
+    .about .aboutArea .infoWrap .aboutInfo li{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+    .about .aboutArea .infoWrap .aboutInfo li strong{
+        width: 100px;
     }
 
     .about .aboutArea .infoWrap .skillImg{
-        gap: 30px;
+        gap: 20px;
     }
     .about .aboutArea .infoWrap .skillImg div{
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
     }
     .about .aboutArea .infoWrap .skillImg div img{
         width: 100%;
@@ -949,8 +1006,13 @@ section .inner .titleArea h2 span{
     .about .aboutArea .infoWrap .aboutText p{}
 
     .about .aboutArea .imgWrap{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
+    }
+    .about .aboutArea .imgWrap img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     /*contact section*/
@@ -962,17 +1024,16 @@ section .inner .titleArea h2 span{
         /*position: absolute;*/
         /*top: 50%;*/
         margin-top: 200px;
-        font-size: 20px;
+        font-size: 16px;
     }
     .contact .contactLink li strong span{
-        width: 25px;
-        height: 25px;
-        font-size: 18px;
-        line-height: 25px;
-        margin-left: 8px;
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
+        line-height: 20px;
     }
     .contact .contactLink li a img{
-        width: 15px;
-        height: 15px;
+        width: 12px;
+        height: 12px;
     }
 }
