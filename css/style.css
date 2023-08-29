@@ -15,6 +15,22 @@ a{
     overflow: hidden;
 }
 
+/*follow cursor 이벤트*/
+.followCursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: orangered;
+    transition: 120ms;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 9999;
+}
+
 /*main*/
 section{
     margin-bottom: 150px;

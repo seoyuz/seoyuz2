@@ -1,6 +1,26 @@
 
 $(function() {
 
+    function mousemoveEvent(){
+        let $win = $(window);
+        const $cursor = $(".followCursor");
+        const mousePos = {
+            x: 0,
+            y: 0,
+        }
+
+        $win.on("mousemove", function (event){
+            mousePos.x = event.clientX;
+            mousePos.y = event.clientY;
+
+            $cursor.css({
+                left: mousePos.x,
+                top: mousePos.y,
+            });
+        });
+    }
+    mousemoveEvent();
+
     // gsap.registerPlugin(ScrollTrigger);
     //
     // gsap.to(".textScrolling .textLeft",
