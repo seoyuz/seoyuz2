@@ -1,8 +1,6 @@
 @import url(common.css);
 
-body{
-    font-family: 'Pretendard-Regular', sans-serif;
-}
+body{ font-family: 'Pretendard-Regular', sans-serif; }
 
 a{
     text-decoration: none;
@@ -21,8 +19,8 @@ a{
     left: 0;
     top: 0;
     transform: translate(-50%, -50%);
-    width: 23px;
-    height: 23px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background: orangered;
     transition: 120ms;
@@ -30,6 +28,12 @@ a{
     pointer-events: none;
     z-index: 9999;
 }
+
+.dark{
+    background-color: #000;
+    color: #fff;
+}
+
 
 /*main*/
 section{
@@ -60,9 +64,7 @@ section .inner .titleArea h2{
     font-weight: bold;
     margin-bottom: 20px;
 }
-section .inner .titleArea h2 span{
-    color: orangered;
-}
+section .inner .titleArea h2 span{ color: orangered; }
 
 /*visual section*/
 .visual{
@@ -86,17 +88,13 @@ section .inner .titleArea h2 span{
     font-size: 2vw;
     color: orangered;
 }
-.visual .visualText .txt-2{
-    margin-left: 185px;
-}
+.visual .visualText .txt-2{ margin-left: 185px; }
 .visual .visualText .txt-3{}
 .visual .visualText p img{
     animation: rotateImg 3s linear infinite;
     /*transform-origin: 50% 50%;*/
 }
-@keyframes rotateImg {
-    100% { transform: rotate(360deg);}
-}
+@keyframes rotateImg { 100% { transform: rotate(360deg);}  }
 
 .visual .scrollDown{
     position: absolute;
@@ -145,9 +143,7 @@ section .inner .titleArea h2 span{
     text-transform: uppercase;
     text-align: center;
 }
-.intro .introduceArea > div{
-    margin-bottom: 28px;
-}
+.intro .introduceArea > div{ margin-bottom: 28px; }
 .intro .introduceArea .introTxt-1{}
 .intro .introduceArea .introImg{
     position: absolute;
@@ -183,9 +179,7 @@ section .inner .titleArea h2 span{
     width: 100%;
     background: rgba(255, 69, 0, 1);
 }
-.intro .introduceArea .introTxt-1:hover .introImg{
-    opacity: 1;
-}
+.intro .introduceArea .introTxt-1:hover .introImg{ opacity: 1; }
 .intro .introduceArea .introTxt-1 .introImg{
     right: -210px;
     top: 0;
@@ -194,14 +188,9 @@ section .inner .titleArea h2 span{
 .intro .introduceArea .introTxt-2{}
 .intro .introduceArea .introTxt-2 p{}
 
-.intro .introduceArea .introTxt-3{
-    margin-bottom: 0;
-}
+.intro .introduceArea .introTxt-3{ margin-bottom: 0; }
 
-.intro .introduceArea .introTxt-3 span{
-    position: relative;
-
-}
+.intro .introduceArea .introTxt-3 span{ position: relative; }
 
 .intro .introduceArea .introTxt-3 span:after{
     content: '';
@@ -274,26 +263,16 @@ section .inner .titleArea h2 span{
 
 /*text rolling animate*/
 @keyframes leftRolling{
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(-50%);
-    }
+    0%{ transform: translateX(0); }
+    100%{ transform: translateX(-50%); }
 }
 @keyframes rightRolling{
-    0%{
-        transform: translateX(-40%);
-    }
-    100%{
-        transform: translateX(0);
-    }
+    0%{ transform: translateX(-40%); }
+    100%{ transform: translateX(0); }
 }
 
 /*project section*/
-.project{
-    height: 820px;
-}
+.project{ height: 820px; }
 .project .inner{
     position: relative;
     height: 100%;
@@ -310,12 +289,8 @@ section .inner .titleArea h2 span{
     margin-right: 20px;
     cursor: pointer;
 }
-.project .titleArea .dotWrap .customDots li:last-child{
-    margin-right: 0;
-}
-.project .titleArea .dotWrap .customDots li.slick-active{
-    color: orangered;
-}
+.project .titleArea .dotWrap .customDots li:last-child{ margin-right: 0; }
+.project .titleArea .dotWrap .customDots li.slick-active{ color: orangered; }
 .project .titleArea .dotWrap .customDots li button{ display: none; }
 
 .project .slideArea{
@@ -330,9 +305,7 @@ section .inner .titleArea h2 span{
     text-transform: capitalize;
     color: #696969;
 }
-.project .slideArea .arrowWrap > div{
-    cursor: pointer;
-}
+.project .slideArea .arrowWrap > div{ cursor: pointer; }
 .project .slideArea .arrowWrap .prevArrow{}
 .project .slideArea .arrowWrap .prevArrow:before{
     content: "";
@@ -362,9 +335,7 @@ section .inner .titleArea h2 span{
     transform: translateX(-50%);
 }
 .project .slideArea .sliderWrap .projectSlider{}
-.project .slideArea .sliderWrap .projectSlider .slick-slide{
-    width: 800px;
-}
+.project .slideArea .sliderWrap .projectSlider .slick-slide{ width: 800px; }
 .project .slideArea .sliderWrap .projectSlider .slick-slide img{
     width: 100%;
     height: 100%;
@@ -382,39 +353,57 @@ section .inner .titleArea h2 span{
 }
 .project .sliderWrap .textBoxWrap .textBox{
     position: absolute;
-    width: 400px;
-    padding: 60px 20px;
+    width: 100%;
+    height: 100%;
+    padding: 25px 20px;
     box-sizing: border-box;
-    display: none;
+    visibility: hidden;
+    /*border: 1px solid rgba(0, 0, 0, 0.15);*/
+    background-color: rgba(255, 69, 0, 0.03);
 }
-.project .slideArea .textBoxWrap .textBox.active{
-    display: block;
-}
+.project .slideArea .textBoxWrap .textBox.active{ visibility: visible; }
 .project .sliderWrap .textBoxWrap .textBox .textTitle{
     display: flex;
     justify-content: space-between;
     font-size: 32px;
-    margin-bottom: 40px;
-    /*transform: translateX(-20px);*/
-    /*transition: 0.2s;*/
+    margin-bottom: 65px;
 }
-.project .sliderWrap .textBoxWrap .textBox .textTitle h3{
-    text-transform: capitalize;
-}
+.project .sliderWrap .textBoxWrap .textBox .textTitle h3{ text-transform: capitalize; }
 .project .slideArea .textBoxWrap .textBox .textTitle .projectNum{
     font-family: 'Nanum Myeongjo', serif;
     color: orangered;
 }
 .project .slideArea .textBoxWrap .textBox .desc{
     line-height: 1.5;
-    margin-bottom: 100px;
-    /*transition-delay: 0.4s;*/
+    margin-bottom: 130px;
 }
-.project .slideArea .textBoxWrap .textBox .link{
-    /*transition-delay: 0.6s;*/
+.project .slideArea .textBoxWrap .textBox .desc p{
+    margin-bottom: 18px;
 }
-
+.project .slideArea .textBoxWrap .textBox .link{}
 .project .slideArea .textBoxWrap .textBox .link a{}
+
+/*delay animation*/
+.project .slideArea .textBoxWrap .textBox .textTitle,
+.project .slideArea .textBoxWrap .textBox .desc,
+.project .slideArea .textBoxWrap .textBox .desc p,
+.project .slideArea .textBoxWrap .textBox .link{
+    transform: translateX(30px);
+    opacity: 0;
+}
+.project .slideArea .textBoxWrap .textBox.active .textTitle,
+.project .slideArea .textBoxWrap .textBox.active .desc,
+.project .slideArea .textBoxWrap .textBox.active .desc p,
+.project .slideArea .textBoxWrap .textBox.active .link{
+    transform: translateX(0);
+    opacity: 1;
+    transition: 0.6s;
+}
+.project .slideArea .textBoxWrap .textBox.active .textTitle{transition-delay: 0s;}
+.project .slideArea .textBoxWrap .textBox.active .desc p:first-child{ transition-delay: 0.2s; }
+.project .slideArea .textBoxWrap .textBox.active .desc p:nth-child(2){ transition-delay: 0.3s; }
+.project .slideArea .textBoxWrap .textBox.active .desc p:last-child{ transition-delay: 0.4s; }
+.project .slideArea .textBoxWrap .textBox.active .link{ transition-delay: 0.6s;}
 
 .project .slideArea .progressWrap{}
 .project .slideArea .progressWrap .pageCount{}
@@ -433,9 +422,7 @@ section .inner .titleArea h2 span{
 }
 
 /*goal section*/
-.goal{
-    padding: 100px;
-}
+.goal{ padding: 100px; }
 .goal .quotation{
     position: relative;
     display: flex;
@@ -473,9 +460,7 @@ section .inner .titleArea h2 span{
     bottom: 0;
     font-size: 2vw;
 }
-.goal > p{
-    font-size: 1vw;
-}
+.goal > p{ font-size: 1vw; }
 .goal .goalText{
     margin-top: 10vh;
     text-align: right;
@@ -484,14 +469,10 @@ section .inner .titleArea h2 span{
     line-height: 1.6;
 }
 
-.goal .goalText p span{
-    color: orangered;
-}
+.goal .goalText p span{ color: orangered; }
 
 /*about section*/
-.about{
-    height: 870px;
-}
+.about{ height: 870px; }
 .about .inner{
     position: relative;
     height: 100%;
@@ -522,9 +503,7 @@ section .inner .titleArea h2 span{
     gap: 50px;
     margin-bottom: 20px;
 }
-.about .aboutArea .infoWrap .aboutInfo li:last-child{
-    margin-bottom: 0;
-}
+.about .aboutArea .infoWrap .aboutInfo li:last-child{ margin-bottom: 0; }
 .about .aboutArea .infoWrap .aboutInfo li strong{
     display: block;
     width: 150px;
@@ -581,9 +560,7 @@ section .inner .titleArea h2 span{
     font-size: 38px;
     text-transform: uppercase;
 }
-.contact .contactLink li{
-    margin-bottom: 70px;
-}
+.contact .contactLink li{ margin-bottom: 70px; }
 .contact .contactLink li:after{
     content: '';
     display: block;
@@ -593,15 +570,9 @@ section .inner .titleArea h2 span{
     opacity: 0;
     transition: 0.4s;
 }
-.contact .contactLink li:hover:after{
-    opacity: 1;
-}
-.contact .contactLink li:last-child{
-    margin-bottom: 0;
-}
-.contact .contactLink li strong{
-    align-items: center;
-}
+.contact .contactLink li:hover:after{ opacity: 1; }
+.contact .contactLink li:last-child{ margin-bottom: 0; }
+.contact .contactLink li strong{ align-items: center; }
 .contact .contactLink li strong span{
     display: inline-block;
     width: 33px;
@@ -622,30 +593,18 @@ section .inner .titleArea h2 span{
 /*반응형*/
 /*tablet*/
 @media (max-width: 768px) {
-    .inner{
-        width: 600px;
-    }
-    section .scNum{
-        font-size: 150px;
-    }
-    section .inner .titleArea h2{
-        font-size: 52px;
-    }
+    .inner{ width: 600px; }
+    section .scNum{ font-size: 150px; }
+    section .inner .titleArea h2{ font-size: 52px; }
 
     /*visual*/
-    .visual{
-        height: 900px;
-    }
-    .visual .visualText{
-        bottom: 230px;
-    }
+    .visual{ height: 900px; }
+    .visual .visualText{ bottom: 230px; }
     .visual .visualText p img{
         width: 7%;
         height: 7%;
     }
-    .visual .visualText .txt-2{
-        margin-left: 0;
-    }
+    .visual .visualText .txt-2{ margin-left: 0; }
     .visual .scrollDown{
         left: 50%;
         transform: translateX(-50%);
@@ -658,9 +617,7 @@ section .inner .titleArea h2 span{
     }
 
     /*intro*/
-    .intro .introduceArea{
-        width: 600px;
-    }
+    .intro .introduceArea{ width: 600px; }
     .intro .introduceArea .introImg{
         width: 240px;
         height: 360px;
@@ -675,17 +632,13 @@ section .inner .titleArea h2 span{
     }
 
     /*project*/
-    .project{
-        height: 580px;
-    }
+    .project{ height: 580px; }
     .project .inner{
         position: relative;
         height: 100%;
     }
 
-    .project .titleArea .dotWrap .customDots{
-        font-size: 12px;
-    }
+    .project .titleArea .dotWrap .customDots{ font-size: 12px; }
 
     .project .slideArea{
         position: absolute;
@@ -700,18 +653,14 @@ section .inner .titleArea h2 span{
         /*bottom: 0;*/
         /*transform: translateX(-50%);*/
     }
-    .project .slideArea .sliderWrap .projectSlider .slick-slide{
-        width: 400px;
-    }
+    .project .slideArea .sliderWrap .projectSlider .slick-slide{ width: 400px; }
     .project .slideArea .sliderWrap .projectSlider .slick-slide img{
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
-    .project .sliderWrap .textBoxWrap{
-        width: 200px;
-    }
+    .project .sliderWrap .textBoxWrap{ width: 200px; }
     .project .sliderWrap .textBoxWrap .textBox{
         width: 200px;
         padding: 13px 10px;
@@ -720,21 +669,16 @@ section .inner .titleArea h2 span{
         font-size: 18px;
         margin-bottom: 13px;
     }
-    .project .sliderWrap .textBoxWrap .textBox .textTitle h3{
-        font-size: 18px;
-    }
+    .project .sliderWrap .textBoxWrap .textBox .textTitle h3{ font-size: 18px; }
     .project .slideArea .textBoxWrap .textBox .desc{
         font-size: 14px;
         margin-bottom: 60px;
     }
 
-    .project .slideArea .textBoxWrap .textBox .link a{
-        font-size: 12px;
-    }
+    .project .slideArea .textBoxWrap .textBox .link a{ font-size: 12px; }
+
     /*goal*/
-    .goal{
-        padding: 50px;
-    }
+    .goal{ padding: 50px; }
     .goal .quotation{
         line-height: 1.6;
         margin-bottom: 30px;
@@ -751,9 +695,7 @@ section .inner .titleArea h2 span{
     }
 
     /*about*/
-    .about{
-        height: 800px;
-    }
+    .about{ height: 800px; }
 
     .about .aboutArea{
         bottom: 0;
@@ -761,17 +703,11 @@ section .inner .titleArea h2 span{
         align-items: center;
         gap: 70px;
     }
-    .about .aboutArea .infoWrap{
-        gap: 35px;
-    }
+    .about .aboutArea .infoWrap{ gap: 35px; }
     .about .aboutArea .infoWrap .aboutInfo,
-    .about .aboutArea .infoWrap .aboutInfo li strong{
-        font-size: 18px;
-    }
+    .about .aboutArea .infoWrap .aboutInfo li strong{ font-size: 18px;}
 
-    .about .aboutArea .infoWrap .skillImg{
-        gap: 30px;
-    }
+    .about .aboutArea .infoWrap .skillImg{ gap: 30px; }
     .about .aboutArea .infoWrap .skillImg div{
         width: 35px;
         height: 35px;
@@ -781,9 +717,7 @@ section .inner .titleArea h2 span{
         height: 100%;
     }
 
-    .about .aboutArea .infoWrap .aboutText{
-        line-height: 1.5;
-    }
+    .about .aboutArea .infoWrap .aboutText{ line-height: 1.5; }
     .about .aboutArea .infoWrap .aboutText p{}
 
     .about .aboutArea .imgWrap{
@@ -792,9 +726,7 @@ section .inner .titleArea h2 span{
     }
 
     /*contact section*/
-    .contact{
-        height: 450px;
-    }
+    .contact{ height: 450px; }
 
     .contact .contactLink{
         /*position: absolute;*/
@@ -816,27 +748,19 @@ section .inner .titleArea h2 span{
 }
 /*mobile*/
 @media (max-width: 430px) {
-    .inner{
-        width: 300px;
-    }
-    section{
-        margin-bottom: 90px;
-    }
+    .inner{ width: 300px; }
+    section{ margin-bottom: 90px; }
     section .scNum{
         right: -18px;
         font-size: 100px;
     }
-    section .inner .titleArea h2{
-        font-size: 32px;
-    }
-    .visual{
-        height: 600px;
-    }
+    section .inner .titleArea h2{ font-size: 32px; }
+
+    /*visual*/
+    .visual{ height: 600px; }
 
     /*intro*/
-    .intro{
-        height: 500px;
-    }
+    .intro{ height: 500px; }
     .intro .introduceArea{
         width: 100%;
         padding: 150px 0;
@@ -861,9 +785,7 @@ section .inner .titleArea h2 span{
         margin-bottom: 110px;
     }
 
-    .textRolling .textLeft{
-        gap: 18px;
-    }
+    .textRolling .textLeft{ gap: 18px; }
     .textRolling .textLeft img{
         width: 24px;
         height: 24px;
@@ -877,33 +799,19 @@ section .inner .titleArea h2 span{
 
     /*text rolling animate*/
     @keyframes leftRolling{
-        0%{
-            transform: translateX(0);
-        }
-        100%{
-            transform: translateX(-68%);
-        }
+        0%{ transform: translateX(0); }
+        100%{ transform: translateX(-68%); }
     }
     @keyframes rightRolling{
-        0%{
-            transform: translateX(-68%);
-        }
-        100%{
-            transform: translateX(0);
-        }
+        0%{ transform: translateX(-68%); }
+        100%{ transform: translateX(0); }
     }
 
     /*project*/
-    .project{
-        height: 500px;
-    }
-    .project .inner{
-        position: relative;
-    }
+    .project{ height: 500px; }
+    .project .inner{ position: relative; }
 
-    .project .titleArea .dotWrap .customDots{
-        font-size: 10px;
-    }
+    .project .titleArea .dotWrap .customDots{ font-size: 10px; }
 
     .project .slideArea{
         width: 300px;
@@ -920,9 +828,7 @@ section .inner .titleArea h2 span{
         top: 0;
         width: 100%;
     }
-    .project .slideArea .sliderWrap .projectSlider .slick-slide{
-        width: 300px;
-    }
+    .project .slideArea .sliderWrap .projectSlider .slick-slide{ width: 300px; }
 
     .project .sliderWrap .textBoxWrap{
         position: absolute;
@@ -939,21 +845,16 @@ section .inner .titleArea h2 span{
         font-size: 12px;
         margin-bottom: 13px;
     }
-    .project .sliderWrap .textBoxWrap .textBox .textTitle h3{
-        font-size: 14px;
-    }
+    .project .sliderWrap .textBoxWrap .textBox .textTitle h3{ font-size: 14px; }
     .project .slideArea .textBoxWrap .textBox .desc{
         font-size: 12px;
         margin-bottom: 12px;
     }
 
-    .project .slideArea .textBoxWrap .textBox .link a{
-        font-size: 12px;
-    }
+    .project .slideArea .textBoxWrap .textBox .link a{ font-size: 12px; }
+
     /*goal*/
-    .goal{
-        padding: 50px;
-    }
+    .goal{ padding: 50px; }
     .goal .quotation{
         line-height: 1.6;
         margin-bottom: 30px;
@@ -978,9 +879,7 @@ section .inner .titleArea h2 span{
     }
 
     /*about*/
-    .about{
-        height: 600px;
-    }
+    .about{ height: 600px; }
 
     .about .aboutArea{
         bottom: 0;
@@ -988,25 +887,17 @@ section .inner .titleArea h2 span{
         align-items: center;
         gap: 25px;
     }
-    .about .aboutArea .infoWrap{
-        gap: 20px;
-    }
+    .about .aboutArea .infoWrap{ gap: 20px; }
     .about .aboutArea .infoWrap .aboutInfo,
-    .about .aboutArea .infoWrap .aboutInfo li strong{
-        font-size: 14px;
-    }
+    .about .aboutArea .infoWrap .aboutInfo li strong{ font-size: 14px; }
     .about .aboutArea .infoWrap .aboutInfo li{
         display: flex;
         gap: 10px;
         margin-bottom: 18px;
     }
-    .about .aboutArea .infoWrap .aboutInfo li strong{
-        width: 100px;
-    }
+    .about .aboutArea .infoWrap .aboutInfo li strong{ width: 100px; }
 
-    .about .aboutArea .infoWrap .skillImg{
-        gap: 20px;
-    }
+    .about .aboutArea .infoWrap .skillImg{ gap: 20px; }
     .about .aboutArea .infoWrap .skillImg div{
         width: 25px;
         height: 25px;
@@ -1016,9 +907,7 @@ section .inner .titleArea h2 span{
         height: 100%;
     }
 
-    .about .aboutArea .infoWrap .aboutText{
-        line-height: 1.5;
-    }
+    .about .aboutArea .infoWrap .aboutText{ line-height: 1.5; }
     .about .aboutArea .infoWrap .aboutText p{}
 
     .about .aboutArea .imgWrap{
@@ -1032,9 +921,7 @@ section .inner .titleArea h2 span{
     }
 
     /*contact section*/
-    .contact{
-        height: 450px;
-    }
+    .contact{ height: 450px; }
 
     .contact .contactLink{
         /*position: absolute;*/

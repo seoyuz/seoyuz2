@@ -1,5 +1,12 @@
 
 $(function() {
+    $(window).on("scroll", function() {
+        $(this).scrollTop();
+    });
+
+    $(".toggleButton").on("click", function () {
+       $("main").toggleClass("dark");
+    });
 
     function mousemoveEvent(){
         let $win = $(window);
@@ -80,9 +87,11 @@ $(function() {
         if (scrollTop > 1910) {
             $(".header").addClass("on");
             $(".header .gnb").find("img").attr("src", "../images/arrow.png");
+            $(".header .gnb").css("color", "#000");
         } else {
             $(".header").removeClass("on");
             $(".header .gnb").find("img").attr("src", "../images/arrow-white.png");
+            $(".header .gnb").css("color", "#fff");
             // $(".header").removeClass("on");
         }
     }
