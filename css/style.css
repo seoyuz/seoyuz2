@@ -14,7 +14,7 @@ a{
 }
 
 /*follow cursor 이벤트*/
-.followCursor {
+.followCursor{
     position: fixed;
     left: 0;
     top: 0;
@@ -29,9 +29,12 @@ a{
     z-index: 9999;
 }
 
-.dark{
+main.dark{
     background-color: #000;
     color: #fff;
+}
+main.dark .project .textBox{
+    color: #000;
 }
 
 
@@ -536,8 +539,7 @@ section .inner .titleArea h2 span{ color: orangered; }
     height: 500px;
 }
 .about .aboutArea .imgWrap img{
-    width: 85%;
-    height: 85%;
+    width: 100%;
 }
 
 /*contact section*/
@@ -584,11 +586,53 @@ section .inner .titleArea h2 span{ color: orangered; }
     background: white;
     border-radius: 50%;
 }
-.contact .contactLink li a{
+.contact .contactLink li a,
+.contact .contactLink li p{
     display: inline-block;
     float: right;
 }
 .contact .contactLink li a img{}
+
+/*img popup*/
+.contact .imgPopup{
+    position: absolute;
+    right: 50%;
+    top: 10px;
+    transform: translateX(50%);
+    width: 400px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.contact .imgPopup .imgArea{}
+.contact .imgPopup .imgArea img{
+    width: 100%;
+}
+.contact .imgPopup .closeArea{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.contact .imgPopup .closeArea span{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+.contact .imgPopup .closeArea span:first-child{
+    transform: rotate(45deg);
+}
+.contact .imgPopup .closeArea span:last-child {
+    transform: rotate(-45deg);
+}
+
 
 /*반응형*/
 /*tablet*/
@@ -596,6 +640,7 @@ section .inner .titleArea h2 span{ color: orangered; }
     .inner{ width: 600px; }
     section .scNum{ font-size: 150px; }
     section .inner .titleArea h2{ font-size: 52px; }
+    .followCursor {display: none;}
 
     /*visual*/
     .visual{ height: 900px; }
@@ -745,6 +790,9 @@ section .inner .titleArea h2 span{ color: orangered; }
         width: 15px;
         height: 15px;
     }
+    .contact .imgPopup{
+        width: 350px;
+    }
 }
 /*mobile*/
 @media (max-width: 430px) {
@@ -848,8 +896,9 @@ section .inner .titleArea h2 span{ color: orangered; }
     .project .sliderWrap .textBoxWrap .textBox .textTitle h3{ font-size: 14px; }
     .project .slideArea .textBoxWrap .textBox .desc{
         font-size: 12px;
-        margin-bottom: 12px;
+        margin-bottom: 10px;
     }
+    .project .slideArea .textBoxWrap .textBox .desc p{margin-bottom: 0}
 
     .project .slideArea .textBoxWrap .textBox .link a{ font-size: 12px; }
 
