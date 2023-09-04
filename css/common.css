@@ -196,7 +196,6 @@ header.on .headerWrap nav .gnb li a img{
     /*header*/
     header .headerWrap{
         height: 50px;
-        border: 2px solid red;
     }
     header .headerWrap .gnb{
         display: none;
