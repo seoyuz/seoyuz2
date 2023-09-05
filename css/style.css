@@ -183,16 +183,19 @@ section .inner .titleArea h2 span{ color: #ff4500ff; }
 /*text scrolling*/
 .textRolling{
     padding: 150px 0;
+    width: 100%;
+    max-width:100%;
     font-size: 48px;
     text-transform: uppercase;
-    white-space: nowrap;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
-
 .textRolling .textLeft{
+    width: 100%;
     display: flex;
     gap: 40px;
     text-transform: uppercase;
+    white-space: nowrap;
     animation: leftRolling 6s infinite linear;
 }
 .textRolling .textLeft div {
@@ -210,18 +213,19 @@ section .inner .titleArea h2 span{ color: #ff4500ff; }
     display: flex;
     gap: 54px;
     margin: 50px 0;
+    white-space: nowrap;
     font-family: 'Playfair Display', serif;
     animation: rightRolling 6s infinite linear;
 }
 
 /*text rolling animate*/
 @keyframes leftRolling{
-    0%{ transform: translateX(0); }
-    100%{ transform: translateX(-50%); }
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
 @keyframes rightRolling{
-    0%{ transform: translateX(-40%); }
-    100%{ transform: translateX(0); }
+    from { transform: translateX(-40%); }
+    to { transform: translateX(0); }
 }
 
 

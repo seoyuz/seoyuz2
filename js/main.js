@@ -90,6 +90,8 @@ $(function() {
         // $(".project").find(".pageCount").text( `${next + 1} / ${slick.slideCount}` );
         const ratio = (next + 1) /slick.slideCount * 100 + "%"
         $(".project").find(".progressBar").css("width", ratio);
+
+
     });
 
 /*contact section popup*/
