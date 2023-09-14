@@ -12,7 +12,6 @@
 }
 .newsWrap .newsCon .newsContents{
     width: 320px;
-    /*height: 440px;*/
 }
 .newsWrap .newsCon .newsContents .thumbArea{
     width: 100%;
@@ -54,10 +53,20 @@
 .newsWrap .newsCon .newsContents .articleArea .date{}
 .newsWrap .newsCon .newsContents .articleArea a{
     float: right;
+    position: relative;
+}
+.newsWrap .newsCon .newsContents .articleArea a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: 0.5s;
 }
 .newsWrap .newsCon .newsContents .articleArea a:hover::after{
-    content: "";
-    text-decoration: underline 1px solid #fff;
+    width: 100%;
 }
 .newsWrap .newsCon .newsContents .articleArea .date,
 .newsWrap .newsCon .newsContents .articleArea a{
