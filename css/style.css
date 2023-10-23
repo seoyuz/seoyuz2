@@ -36,6 +36,7 @@ section .scNum{
     -webkit-text-stroke: 2px rgba(182, 182, 182, 0.4);
     color: transparent;
 }
+
 section .inner .titleArea{
     position: absolute;
     left: 0;
@@ -98,7 +99,7 @@ section .inner .titleArea h2 span{ color: #ff4500; }
     height: 100px;
 }
 .visual .scrollDown p{
-    font-size: 1.2vw;
+    font-size: 0.8rem;
     text-align: center;
 }
 
@@ -112,7 +113,7 @@ section .inner .titleArea h2 span{ color: #ff4500; }
     transform: translateX(-50%);
     padding: 200px 0;
     font-family: 'Playfair Display', serif;
-    font-size: 2.5vw;
+    font-size: 1.6rem;
     text-transform: uppercase;
     text-align: center;
 }
@@ -185,7 +186,8 @@ section .inner .titleArea h2 span{ color: #ff4500; }
     padding: 150px 0;
     width: 100%;
     max-width:100%;
-    font-size: 48px;
+    font-size: 3rem;
+    /*font-size: 48px;*/
     text-transform: uppercase;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -235,7 +237,8 @@ section .inner .titleArea h2 span{ color: #ff4500; }
 .project .titleArea .dotWrap .customDots{
     display: flex;
     text-transform: capitalize;
-    font-size: 16px;
+    font-size: 1.2rem;
+    /*font-size: 16px;*/
     font-weight: bold;
 }
 .project .titleArea .dotWrap .customDots li{
@@ -310,7 +313,8 @@ section .inner .titleArea h2 span{ color: #ff4500; }
 .project .sliderWrap .textBoxWrap .textBox .textTitle{
     display: flex;
     justify-content: space-between;
-    font-size: 32px;
+    font-size: 2rem;
+    /*font-size: 32px;*/
     margin-bottom: 65px;
 }
 .project .sliderWrap .textBoxWrap .textBox .textTitle h3{ text-transform: capitalize; }
@@ -370,25 +374,26 @@ section .inner .titleArea h2 span{ color: #ff4500; }
     justify-content: space-between;
     width: 100%;
     margin-bottom: 15px;
+
     font-family: 'Playfair Display',serif;
-    font-size: 3vw;
+    font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.4;
     text-transform: uppercase;
-    color: rgba(182, 182, 182, 0.3);
+    color: rgb(189, 189, 189);
 }
 
 .goal .quotation .txt-2{
     position: absolute;
     right: 0;
     bottom: 0;
-    font-size: 2vw;
+    font-size: 0.8rem;
 }
-.goal > p{ font-size: 1vw; }
+.goal > p{ font-size: 0.6rem; }
 .goal .goalText{
     margin-top: 10vh;
     text-align: right;
-    font-size: 1.5vw;
+    font-size: 0.7rem;
     font-weight: bold;
     line-height: 1.6;
 }
@@ -417,7 +422,7 @@ section .inner .titleArea h2 span{ color: #ff4500; }
 }
 .about .aboutArea .infoWrap .aboutInfo{
     margin: 0 auto;
-    font-size: 1.6vw;
+    font-size: 1.2rem;
 }
 .about .aboutArea .infoWrap .aboutInfo li{
     display: flex;
@@ -428,9 +433,10 @@ section .inner .titleArea h2 span{ color: #ff4500; }
 .about .aboutArea .infoWrap .aboutInfo li strong{
     display: block;
     width: 150px;
-    font-size: 1.7vw;
+    font-size: 1.4rem;
     font-weight: bold;
 }
+
 
 .about .aboutArea .infoWrap .skillImg{
     display: flex;
@@ -444,11 +450,6 @@ section .inner .titleArea h2 span{ color: #ff4500; }
 .about .aboutArea .infoWrap .skillImg div img{
     width: 100%;
     height: 100%;
-}
-
-.about .aboutArea .infoWrap .aboutText{
-    font-size: 1.6vw;
-    text-align: center;
 }
 
 .about .aboutArea .imgWrap{
@@ -475,7 +476,8 @@ section .inner .titleArea h2 span{ color: #ff4500; }
 .contact .contactLink{
     width: 100%;
     margin-top: 250px;
-    font-size: 38px;
+    font-size: 2.2rem;
+    /*font-size: 38px;*/
     text-transform: uppercase;
 }
 .contact .contactLink li{ margin-bottom: 70px; }
@@ -495,7 +497,8 @@ section .inner .titleArea h2 span{ color: #ff4500; }
     display: inline-block;
     width: 33px;
     height: 33px;
-    font-size: 30px;
+    font-size: 1.8rem;
+    /*font-size: 30px;*/
     text-align: center;
     line-height: 37px;
     color: black;
@@ -549,9 +552,10 @@ section .inner .titleArea h2 span{ color: #ff4500; }
 }
 
 
-/*반응형*/
-/*tablet*/
-@media (max-width: 768px) {
+/*반응형 미디어쿼리*/
+@media (max-width: 768px) { /* tablet 반응형 */
+    html{font-size: 14px;}
+
     .inner{ width: 600px; }
     section .scNum{ font-size: 150px; }
     section .inner .titleArea h2{ font-size: 52px; }
@@ -626,12 +630,12 @@ section .inner .titleArea h2 span{ color: #ff4500; }
         padding: 13px 10px;
     }
     .project .sliderWrap .textBoxWrap .textBox .textTitle{
-        font-size: 18px;
+        /*font-size: 18px;*/
         margin-bottom: 13px;
     }
     .project .sliderWrap .textBoxWrap .textBox .textTitle h3{ font-size: 18px; }
     .project .slideArea .textBoxWrap .textBox .desc{
-        font-size: 14px;
+        /*font-size: 14px;*/
         margin-bottom: 60px;
     }
 
@@ -665,7 +669,7 @@ section .inner .titleArea h2 span{ color: #ff4500; }
     }
     .about .aboutArea .infoWrap{ gap: 35px; }
     .about .aboutArea .infoWrap .aboutInfo,
-    .about .aboutArea .infoWrap .aboutInfo li strong{ font-size: 18px;}
+    /*.about .aboutArea .infoWrap .aboutInfo li strong{ font-size: 18px;}*/
 
     .about .aboutArea .infoWrap .skillImg{ gap: 30px; }
     .about .aboutArea .infoWrap .skillImg div{
@@ -692,12 +696,12 @@ section .inner .titleArea h2 span{ color: #ff4500; }
         /*position: absolute;*/
         /*top: 50%;*/
         margin-top: 200px;
-        font-size: 20px;
+        /*font-size: 20px;*/
     }
     .contact .contactLink li strong span{
         width: 25px;
         height: 25px;
-        font-size: 18px;
+        /*font-size: 18px;*/
         line-height: 25px;
         margin-left: 8px;
     }
@@ -710,8 +714,11 @@ section .inner .titleArea h2 span{ color: #ff4500; }
         width: 350px;
     }
 }
-/*mobile*/
-@media (max-width: 430px) {
+
+
+@media (max-width: 430px) { /* mobile 반응형 */
+    html {font-size: 12px;}
+
     .inner{ width: 300px; }
     section{ margin-bottom: 90px; }
     section .scNum{

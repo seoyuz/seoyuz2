@@ -1,4 +1,4 @@
-@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css'); /*xe아이콘*/
 
 /*header*/
 header{
@@ -8,25 +8,26 @@ header{
     transition: 0.5s;
     z-index: 9999;
     background: black;
-    /*border: 5px solid red;*/
-    /*box-sizing: border-box;*/
 }
 header .headerWrap{
     position: relative;
     height: 80px;
     text-align: center;
-    line-height: 80px;
     color: white;
 }
-header .headerWrap h1{
+header .headerWrap .logo{
+    position: absolute;
+    left: 55px;
+    width: 55px;
+    height: 100%;
+}
+header .headerWrap .logo a{
     position: absolute;
     top: 50%;
-    left: 55px;
+    left: 0;
     transform: translateY(-50%);
-}
-header .headerWrap h1 a{
     display: inline-block;
-    width: 55px;
+    width: 100%;
     height: 25px;
 
     background-image: url("../images/logo.png");
@@ -35,23 +36,31 @@ header .headerWrap h1 a{
     background-size: 100% auto;
 }
 
-header .headerWrap nav{}
+header .headerWrap nav{
+    /*width: 70%;*/
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    font-size: 1rem;
+}
 header .headerWrap nav .gnb{
     font-size: 0;
+    height: 100%;
 }
 header .headerWrap nav .gnb li{
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.2rem;
     text-transform: uppercase;
-    margin-right: 110px;
-}
-header .headerWrap nav .gnb li:last-child{
-    margin-right: 0;
+    padding: 0 30px;
+    line-height: 80px;
 }
 header .headerWrap nav .gnb li a {}
 header .headerWrap nav .gnb li a img{
-    width: 13px;
-    height: 13px;
+    width: 0.8rem;
+    height: 0.8rem;
+    /*width: 13px;*/
+    /*height: 13px;*/
 }
 
 header .headerWrap .darkMode{
@@ -62,10 +71,10 @@ header .headerWrap .darkMode{
 } /*다크모드하는법 : 바디태그에 클래스를 주고 색상 내용 바꿔준다음 toggleClass 로 온오프*/
 
 .headerWrap .toggleSwitch {
+    position: relative;
     width: 50px;
     height: 20px;
     display: inline-block;
-    position: relative;
     border-radius: 30px;
     background-color: #fff;
     box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
@@ -128,7 +137,7 @@ header .headerWrap .hamburger span:last-child{
     bottom: 0;
 }
 
-/*hamburger버튼 on*/
+/*hamburger 버튼 on*/
 header .headerWrap .hamburger.on span:first-child{
     top: 0;
     transform: rotate(45deg);
@@ -160,7 +169,7 @@ header.on .headerWrap nav .gnb li a img{
     overflow: hidden;
 }
 .footer .footerTextRolling{
-    font-size: 1.9vw;
+    font-size: 1.6rem;
     line-height: 80px;
     color: #FE6C3B;
     text-transform: uppercase;
@@ -183,21 +192,40 @@ header.on .headerWrap nav .gnb li a img{
     line-height: 20px;
 }
 
+/*반응형 미디어쿼리*/
+@media (max-width: 768px) { /* tablet 반응형 */
+    html{font-size: 14px;}
 
-@media (max-width: 768px) {
-    header .headerWrap h1{
+    header .headerWrap .logo{
         left: 10px;
     }
+    header .headerWrap nav .gnb{
+        display: flex;
+        justify-content: space-between;
+    }
+    header .headerWrap nav .gnb li{
+        font-size: 1rem;
+        padding: 0;
+    }
+
     header .headerWrap .darkMode{
         right: 10px;
     }
 }
-@media (max-width: 430px) {
+@media (max-width: 430px) { /*mobile 반응형*/
+    html{font-size: 12px;}
+
     /*header*/
     header .headerWrap{
         height: 50px;
+        border: 5px solid white;
     }
-    header .headerWrap .gnb{
+    header .headerWrap .logo{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    header .headerWrap nav .gnb{
         display: none;
     }
     header .headerWrap .darkMode {
