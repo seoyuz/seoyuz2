@@ -329,6 +329,16 @@ section .inner .titleArea h2 span{ color: #ff4500; }
 .project .slideArea .textBoxWrap .textBox .desc p{
     margin-bottom: 18px;
 }
+.project .slideArea .textBoxWrap .textBox .link{
+    display: flex;
+    gap: 30px;
+}
+.project .slideArea .textBoxWrap .textBox .link a{
+    padding: 3px 10px;
+    border: 3px solid #ff4500;
+    border-radius: 15px;
+    color: #ff4500;
+}
 
 /*delay animation*/
 .project .slideArea .textBoxWrap .textBox .textTitle,
