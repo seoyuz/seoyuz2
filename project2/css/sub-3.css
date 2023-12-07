@@ -1,0 +1,68 @@
+@import url("../css/common.css");
+
+
+
+/*main*/
+main .inner {
+    width: 1180px;
+}
+.container{
+    display: flow-root;
+    margin-bottom: 150px;
+}
+
+.container .mainContainer .mainContentsWrap{
+    width: 842px;
+    margin: 0 auto;
+}
+.container .mainContents{
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #EFEFEF;
+}
+.container .mainContents strong{
+    font-size: 22px;
+}
+.container .mainContents p{
+    line-height: 1.5;
+    margin: 15px 0 10px;
+}
+.container .mainContents button{
+    position: relative;
+    left: 600px;
+    width: 200px;
+    height: 50px;
+    background: #fff;
+    border-radius: 15px;
+}
+.container .mainContents button::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    background: #8CC5F4;
+    border-radius: 50%;
+}
+.container .mainContents:nth-child(2) button::after{
+    background: #FFCE8A;
+}
+.container .mainContents:nth-child(3) button::after{
+    background: #F7D160;
+}
+.container .mainContents:nth-child(4) button::after{
+    background: #6BD9F2;
+}
+.container .mainContents:nth-child(5) button::after{
+    background: #F25C69;
+}
+.container .mainContents:nth-child(6) button::after{
+    background: #FFCE8A;
+}
+.container .mainContents button img{
+    z-index: 9999;
+    position: absolute;
+    width: 50px;
+    right: 30px;
+    bottom: 15px;
+}

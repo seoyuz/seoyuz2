@@ -1,6 +1,11 @@
 @import url("../css/common.css");
 
 
+/*main*/
+main .inner{
+    width: 1180px;
+}
+
 .container .mainContainer .mainContentsWrap{}
 .container .mainContainer .mainContentsWrap .employTableArea{}
 .container .mainContainer .mainContentsWrap .employTableArea table{
