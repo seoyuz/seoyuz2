@@ -393,6 +393,13 @@ footer .footerInfo .footerInfoWrap .webA img{
 }
 .container .mainContainer .mainTitleWrap .breadcrumbs{
     line-height: 50px;
+    color: #707070;
+}
+.container .mainContainer .mainTitleWrap .breadcrumbs a{
+
 }
 .container .mainContainer .mainTitleWrap .breadcrumbs i{}
 .container .mainContainer .mainTitleWrap .breadcrumbs span{}
+.container .mainContainer .mainTitleWrap .breadcrumbs span.nowPage{
+    color: #000;
+}

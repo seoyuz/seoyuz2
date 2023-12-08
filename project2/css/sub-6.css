@@ -1,0 +1,42 @@
+@import url("../css/common.css");
+
+
+/*main*/
+main .inner{
+    width: 1180px;
+}
+
+.container .mainContainer .mainContentsWrap{}
+.container .mainContainer .mainContentsWrap .tabArea{}
+
+.container .mainContainer .mainContentsWrap .tabArea .tabTitle{
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    cursor: pointer;
+}
+.container .mainContainer .mainContentsWrap .tabArea .tabTitle li{
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    background: #B9DBF8;
+    border-radius: 8px 8px 0 0;
+}
+.container .mainContainer .mainContentsWrap .tabArea .tabTitle li.active{
+    width: 155px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background: #055BA6;
+}
+
+.container .mainContainer .mainContentsWrap .tabArea .tabContents{
+    border: 1px solid #e7e7e7;
+}
+.container .mainContainer .mainContentsWrap .tabArea .tabContents .content{
+    text-align: center;
+}
+.container .mainContainer .mainContentsWrap .tabArea .tabContents .content.active{}

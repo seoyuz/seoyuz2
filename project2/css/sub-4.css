@@ -1,0 +1,118 @@
+@import url("../css/common.css");
+
+
+/*main*/
+main .inner{
+    width: 1180px;
+}
+
+.container .mainContainer .mainContentsWrap{}
+.container .mainContainer .mainContentsWrap .noticeTableArea{}
+.container .mainContainer .mainContentsWrap .noticeTableArea table{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.container .mainContainer .mainContentsWrap .noticeTableArea table caption{}
+
+.container .mainContainer .mainContentsWrap .noticeTableArea table colgroup{}
+.container .mainContainer .mainContentsWrap .noticeTableArea table colgroup col{}
+
+.container .mainContainer .mainContentsWrap .noticeTableArea table thead{
+    height: 35px;
+    line-height: 35px;
+    background: #002f6e;
+    color: white;
+}
+.container .mainContainer .mainContentsWrap .noticeTableArea table thead tr{
+    position: relative;
+}
+.container .mainContainer .mainContentsWrap .noticeTableArea table thead tr th{
+    border-right: 1px solid #4c5f77;
+}
+.container .mainContainer .mainContentsWrap .noticeTableArea table thead tr th:last-child{
+    border-right: 0px;
+}
+
+
+.container .mainContainer .mainContentsWrap .noticeTableArea table tbody{}
+.container .mainContainer .mainContentsWrap .noticeTableArea table tbody tr{
+    border-bottom: 1px solid #E7E7E7;
+    box-sizing: border-box;
+}
+.container .mainContainer .mainContentsWrap .noticeTableArea table tbody tr td{}
+
+
+.container .mainContainer .mainContentsWrap .noticeTableArea table tr{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    /*border: 5px solid red;*/
+    box-sizing: border-box;
+}
+.container .mainContainer .mainContentsWrap .noticeTableArea table th{
+    /*border: 2px solid green;*/
+    box-sizing: border-box;
+}
+
+.container .mainContainer .mainContentsWrap .noticeTableArea table td{
+    /*padding: 0 20px;*/
+    text-align: center;
+    /*border: 2px solid blue;*/
+    box-sizing: border-box;
+}
+.container .mainContainer .mainContentsWrap .noticeTableArea table td:nth-child(2){
+    width: 500px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+
+.container .mainContainer .mainContentsWrap .pageFormArea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+/*page nation*/
+.container .mainContainer .mainContentsWrap .pageNation{}
+.container .mainContainer .mainContentsWrap .pageNation span{
+    color: #e75924;
+}
+
+/*search form*/
+.container .mainContainer .mainContentsWrap .searchForm{}
+.container .mainContainer .mainContentsWrap .searchForm label{
+    display: none;
+}
+.container .mainContainer .mainContentsWrap .searchForm select{
+    padding: 6px 7px;
+    /*box-sizing: border-box;*/
+}
+.container .mainContainer .mainContentsWrap .searchForm input{
+    padding: 6px 60px;
+    /*box-sizing: border-box;*/
+}
+.container .mainContainer .mainContentsWrap .searchForm button{
+    padding: 6px 25px;
+    color: white;
+    background: #002f6e;
+    border-radius: 3px;
+    /*box-sizing: border-box;*/
+}
+
+/*paging*/
+.container .mainContainer .mainContentsWrap .pagingArea{
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+    font-size: 27px;
+}
+.container .mainContainer .mainContentsWrap .pagingArea i{}
+.container .mainContainer .mainContentsWrap .pagingArea p{}
+.container .mainContainer .mainContentsWrap .pagingArea p span{
+    margin: 0 10px;
+}
+.container .mainContainer .mainContentsWrap .pagingArea p span.nowPage{
+    color: #e75924;
+}
