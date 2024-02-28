@@ -1,0 +1,25 @@
+@import "common.css";
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+
+/*main section*/
+
+/*visual section*/
+.visual{
+    border: 2px solid red;
+}
+.visual .slideArea{
+    border: 3px solid yellow;
+    box-sizing: border-box;
+}
+.visual .slideArea .slider{
+    /*border: 3px solid blue;*/
+}
+.visual .slideArea .slider .slick-slide{}

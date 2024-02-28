@@ -1,0 +1,107 @@
+@font-face{
+    font-family: 'Lush';
+    src: url("../font/Lush.ttf");
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*header*/
+header{
+    width: 100%;
+    height: 120px;
+    background: rgba(0, 0, 0, 0.2);
+    /*background: transparent;*/
+    border: 5px solid purple;
+    box-sizing: border-box;
+    /*position: relative;*/
+    position: absolute;
+    z-index: 9999;
+}
+h1{
+    position: absolute;
+    top: 20px;
+    left: 130px;
+
+    border: 2px solid blue ;
+    box-sizing: border-box;
+}
+h1 img{
+    width: 130px;
+    height: 30px;
+}
+nav{
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+}
+nav .gnbLeft,.gnbRight{
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    gap: 20px;
+}
+.gnbLeft{
+    left: 130px;
+
+    border: 2px solid blue ;
+    box-sizing: border-box;
+}
+.gnbLeft li{
+    margin: auto;
+    font-family: 'Pretendard-Regular', sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+.gnbLeft li:not(:first-child){
+    margin: auto 14px;
+}
+
+.gnbLeft .gnbMenu{
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/header_icon.svg");
+}
+.gnbRight{
+    right: 130px;
+
+    /*border: 2px solid blue ;*/
+    box-sizing: border-box;
+}
+.gnbRight *{ margin: auto; }
+
+.gnbRight .rightTop{
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/header_icon.svg");
+    background-size: cover;
+    /*border: 1px solid red;*/
+}
+
+/*검색 폼*/
+#topSearch{
+    width: 300px;
+    height: 30px;
+    background: transparent;
+    border: 0 solid transparent;
+    border-bottom: 1px solid #fff;
+}
+
+/*검색폼 플레이스홀더*/
+#topSearch::placeholder{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: bold;
+}
+
+.gnbRight .topCart{
+    background-position: 60px center;
+}
+.gnbRight .topUser{
+    background-position: 30px center;
+}
