@@ -29,13 +29,6 @@
 }
 /*영문 고딕*/
 
-/*@font-face {*/
-/*    font-family: 'GmarketSansMedium';*/
-/*    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');*/
-/*    font-weight: normal;*/
-/*    font-style: normal;*/
-/*}*/
-
 
 @font-face {
     font-family: 'GmarketSansLight';
@@ -58,13 +51,22 @@
 
 /*한글 고딕*/
 
-/*// <uniquifier>: Use a unique and descriptive class name*/
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 100 to 900 */
 
 .noto-sans-italic {
                 font-family: "Noto Sans", sans-serif;
                 font-optical-sizing: auto;
                 font-weight: 900;
                 font-style: italic;
+                font-variation-settings:
+                        "wdth" 100;
+            }
+.noto-sans-medium {
+                font-family: "Noto Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
                 font-variation-settings:
                         "wdth" 100;
             }

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -25,16 +25,22 @@
 
 <!--header-->
 <header class="header">
-    <div class="headerWrap">
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <h1 class="logo">
-            <a href="#"><span>s</span><span>e</span><span>o</span><br><span>y</span><span>u</span><span>z</span></a>
-        </h1>
-        <p>©seoyujeong 2024 portfolio</p>
+    <ul class="headerWrap">
+        <li>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </li>
+        <li>
+            <h1 class="logo">
+                <a href="#"><span>s</span><span>e</span><span>o</span><br><span>y</span><span>u</span><span>z</span></a>
+            </h1>
+        </li>
+        <li>
+            <p>©seoyujeong 2024 portfolio</p>
+        </li>
 
 <!--&lt;!&ndash;&lt;!&ndash;        <nav>&ndash;&gt;&ndash;&gt;-->
 <!--&lt;!&ndash;&lt;!&ndash;            <ul class="gnb">&ndash;&gt;&ndash;&gt;-->
@@ -49,7 +55,7 @@
 <!--&lt;!&ndash;&lt;!&ndash;                </li>&ndash;&gt;&ndash;&gt;-->
 <!--&lt;!&ndash;&lt;!&ndash;            </ul>&ndash;&gt;&ndash;&gt;-->
 <!--&lt;!&ndash;&lt;!&ndash;        </nav>&ndash;&gt;&ndash;&gt;-->
-    </div>
+    </ul>
 </header>
 
 <!--main-->
@@ -59,353 +65,187 @@
         <div class="inner">
             <div class="visualCon">
                 <div class="visualText">
-                    <h1 class="noto-sans-italic">hello</h1>
-                    <h2>i'm <br> yujeong</h2>
-                    <h3>nice to meet you ! <br>
-                        thanks for visiting my portfolio</h3>
+                    <h2 class="noto-sans-italic">hello</h2>
+                    <p class="txt1">i'm <br> yujeong</p>
+                    <p class="txt2">nice to meet you ! <br>
+                        thanks for visiting my portfolio</p>
                     <!--                <p class="txt-1">2023<span>@seoyuz</span> </p>-->
                     <!--                <p class="txt-2">welc<img src="images/wave_IMG01.png" alt="">me to</p>-->
                     <!--                <p class="txt-3">my p<img src="images/wave_IMG01.png" alt="">rtf<img src="images/wave_IMG01.png" alt="">lio</p>-->
                 </div>
                 <div class="visualImg">
                     <img class="pic1" src="/images/introImg-1.JPG" alt="">
+                    <img class="pic3" src="/images/introImg-3.JPG" alt="">
                     <img class="pic2" src="/images/introImg-2.JPG" alt="">
                 </div>
             </div>
             <div class="emojiDeco">
-                <div class="emoji emojiPalm"></div>
-                <div class="emoji emojiGirl"></div>
-                <div class="emoji emojiPlant"></div>
+                <div class="emoji emojiPalm">
+                    <p>&#128075;</p>
+                </div>
+                <div class="emoji emojiGirl">
+                    <p>👩‍💻</p>
+                </div>
+                <div class="emoji emojiPlant">
+                    <p>&#129716;</p>
+                </div>
+                <div class="emoji emojiBulb">
+                    <p>&#128161;</p>
+                </div>
             </div>
-<!--            <div class="scrollDown">-->
-<!--                <img src="images/downArrow-white.png" alt="">-->
-<!--                <p>scroll down</p>-->
-<!--            </div>-->
         </div>
     </section>
 
-
-    <!--    intro section-->
-<!--    <section class="intro" id="intro">-->
-<!--        <div class="inner">-->
-<!--            <div class="scNum">01</div>-->
-
-<!--            <div class="introduceArea">-->
-<!--                <div class="introTxt-1">-->
-<!--                    <p> hello! i'm <span>seo yujung</span> </p>-->
-<!--                    <div class="introImg">-->
-<!--                        <img src="images/introImg-1.JPG" alt="">-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="introTxt-2">-->
-<!--                    <p>-->
-<!--                        I am trying to become a</p>-->
-<!--                </div>-->
-<!--                <div class="introTxt-3">-->
-<!--                    <span>web publisher</span>-->
-<!--                    <div class="introImg">-->
-<!--                        <img src="images/introImg-2.jpg" alt="">-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-
-
-    <!--    text scrolling-->
-<!--    <section class="textRolling" id="textRolling">-->
-<!--        <div class="textLeft">-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="textRight">-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--        </div>-->
-<!--        <div class="textLeft">-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="textRight">-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--            <div>i hope you like it</div>-->
-<!--        </div>-->
-<!--        <div class="textLeft">-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--             <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <img src="images/textScrollDeco.png" alt="">-->
-<!--                <span>check my project !</span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-
+<!--    marquee-->
+    <section class="marquee">
+        <h2 class="noto-sans-medium"><span>My</span> A<span>tt</span>iTUD<span>e</span></h2>
+        <div class="marqueeWrap">
+            <ul class="marqueeCon">
+                <li class="marqueeCard">
+                    <div class="emoji emojiEgg">
+                        <p>&#129370;</p>
+                    </div>
+                    <div class="desc">
+                        <p>heyy <br> hellooooo</p>
+                        <span>(1)</span>
+                    </div>
+                </li>
+                <li class="marqueeCard">
+                    <div class="emoji emojiBook">
+                        <p>&#128218;</p>
+                    </div>
+                    <div class="desc">
+                        <p>heyy <br> hellooooo</p>
+                        <span>(2)</span>
+                    </div>
+                </li>
+                <li class="marqueeCard">
+                    <div class="emoji emojiChain">
+                        <p>&#128279;</p>
+                    </div>
+                    <div class="desc">
+                        <p>heyy <br> hellooooo</p>
+                        <span>(3)</span>
+                    </div>
+                </li>
+                <li class="marqueeCard">
+                    <div class="emoji emojiEar">
+                        <p>&#128066;</p>
+                    </div>
+                    <div class="desc">
+                        <p>heyy <br> hellooooo</p>
+                        <span>(4)</span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="marqueeCon">
+                <li class="marqueeCard">
+                    <div class="emoji emojiEgg">
+                        <p>&#129370;</p>
+                    </div>
+                    <div class="desc">
+                        <p>heyy <br> hellooooo</p>
+                        <span>(1)</span>
+                    </div>
+                </li>
+                <li class="marqueeCard">
+                    <div class="emoji emojiBook">
+                        <p>&#128218;</p>
+                    </div>
+                    <div class="desc">
+                        <p>heyy <br> hellooooo</p>
+                        <span>(2)</span>
+                    </div>
+                </li>
+                <li class="marqueeCard">
+                    <div class="emoji emojiChain">
+                        <p>&#128279;</p>
+                    </div>
+                    <div class="desc">
+                        <p>heyy <br> hellooooo</p>
+                        <span>(3)</span>
+                    </div>
+                </li>
+                <li class="marqueeCard">
+                    <div class="emoji emojiEar">
+                        <p>&#128066;</p>
+                    </div>
+                    <div class="desc">
+                        <p>heyy <br> hellooooo</p>
+                        <span>(4)</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
 
     <!--    project section-->
-<!--    <section class="project" id="project">-->
-<!--        <div class="inner">-->
-<!--            <div class="scNum">02</div>-->
+    <section class="project" id="project">
+        <div> <!--class="inner"-->
+            <h2 class="noto-sans-italic">PRojEcT ArCHivE</h2>
 
-<!--            <div class="titleArea">-->
-<!--                <h2>pr<span>@</span>ject</h2>-->
-<!--                <div class="dotWrap"></div>-->
-<!--            </div>-->
+            <div class="slideArea">
+                <div class="arrowWrap">
+                    <div class="prevArrow">
+                        <i class="xi-angle-up-thin"></i>
+                    </div>
+                    <div class="nextArrow">
+                        <i class="xi-angle-down-thin"></i>
+                    </div>
+                </div>
 
-<!--            <div class="slideArea">-->
-<!--                <div class="arrowWrap">-->
-<!--                    <div class="prevArrow">-->
-<!--                        <span>prev</span>-->
-<!--                    </div>-->
-<!--                    <div class="nextArrow">-->
-<!--                        <span>next</span>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <div class="sliderWrap">
+                    <div class="projectSlider" id="projectSlider">
+                        <div class="mockupCard">
+                            <a href="project2/index.html"></a>
+                        </div>
+                        <div class="mockupCard">
+                            <a href="project1/index.html"></a>
+                        </div>
+                        <div class="mockupCard">
+                            <a href="cloneCording-casper/index.html"></a>
+                        </div>
+                        <div class="mockupCard">
+                            <a href=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!--                <div class="sliderWrap">-->
-<!--                    <div class="projectSlider" id="projectSlider">-->
-<!--                        <div>-->
-<!--                            <a href="project2/index.html"><img src="images/fireServiceMain.png" alt=""></a>-->
-<!--                            &lt;!&ndash;                            <div><img src="images/imac-mockup.jpg" alt=""></div>&ndash;&gt;-->
-<!--                        </div>-->
-<!--                        <div>-->
-<!--                            <a href="project1/index.html"><img src="images/afunMain.png" alt=""></a>-->
-<!--                            &lt;!&ndash;                            <div><img src="images/imac-mockup.jpg" alt=""></div>&ndash;&gt;-->
-<!--                        </div>-->
-<!--                        <div>-->
-<!--                            <a href="cloneCording-casper/index.html"><img src="images/casperMain.png" alt=""></a>-->
-<!--                        </div>-->
-<!--                        <div>-->
-<!--                            <a href=""><img src="images/portfolioMain.png" alt=""></a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                    <div class="textBoxWrap">-->
-<!--                        <div class="textBox">-->
-<!--                            <div class="textTitle">-->
-<!--                                <h3>경기도 소방재난본부</h3>-->
-<!--                                <div class="projectNum"> 01 </div>-->
-<!--                            </div>-->
-<!--                            <div class="desc">-->
-<!--                                <p>작업기간 : 2023.07 ~ 08</p>-->
-<!--                                <p>기여도 : 디자인 100%, 퍼블리싱 100%<p>-->
-<!--                                <p>사용프로그램 : HTML, CSS, jQuery, Figma</p>-->
-<!--                            </div>-->
-<!--                            <div class="link">-->
-<!--                                <div class="viewLink">-->
-<!--                                    <a href="project2/index.html">view more</a>-->
-<!--                                </div>-->
-<!--                                <div class="figmaLink">-->
-<!--                                    <a href="https://www.figma.com/file/K9pbk7iXsjaGI1Fl84EuIU/%EA%B2%BD%EA%B8%B0%EB%8F%84-%EC%86%8C%EB%B0%A9%EC%9E%AC%EB%82%9C%EB%B3%B8%EB%B6%80?type=design&node-id=0%3A1&mode=design&t=If32Bc6urelIH5p4-1">Figma</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="textBox">-->
-<!--                            <div class="textTitle">-->
-<!--                                <h3>Afun Interactive</h3>-->
-<!--                                <div class="projectNum"> 02 </div>-->
-<!--                            </div>-->
-<!--                            <div class="desc">-->
-<!--                                <p>작업기간 : 2023.07</p>-->
-<!--                                <p>기여도 : 디자인 100%, 퍼블리싱 100%<p>-->
-<!--                                <p>사용프로그램 : HTML, CSS, jQuery, Figma, Photoshop</p>-->
-<!--                            </div>-->
-<!--                            <div class="link">-->
-<!--                                <div class="viewLink">-->
-<!--                                    <a href="project1/index.html">view more</a>-->
-<!--                                </div>-->
-<!--                                <div class="figmaLink">-->
-<!--                                    <a href="https://www.figma.com/file/mBupVIF39SyjI5XyT4MN9x/%EC%97%90%EC%9D%B4%ED%8E%80%EC%9D%B8%ED%84%B0%EB%9E%99%ED%8B%B0%EB%B8%8C?type=design&node-id=296%3A325&mode=design&t=7BeiwohjgBd28O97-1">Figma</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="textBox">-->
-<!--                            <div class="textTitle">-->
-<!--                                <h3>casper clone cording</h3>-->
-<!--                                <div class="projectNum"> 03 </div>-->
-<!--                            </div>-->
-<!--                            <div class="desc">-->
-<!--                                <p>작업기간 : 2023.07</p>-->
-<!--&lt;!&ndash;                                <p>기여도 : <p>&ndash;&gt;-->
-<!--                                <p>사용프로그램 : </p>-->
-<!--                            </div>-->
-<!--                            <div class="link">-->
-<!--                                <a href="#">view more</a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="textBox">-->
-<!--                            <div class="textTitle">-->
-<!--                                <h3>portfolio</h3>-->
-<!--                                <div class="projectNum"> 04 </div>-->
-<!--                            </div>-->
-<!--                            <div class="desc">-->
-<!--                                <p>작업기간 : 2023.08</p>-->
-<!--                                <p>기여도 : 디자인 100%, 퍼블리싱 100%<p>-->
-<!--                                <p>사용프로그램 : HTML, CSS, jQuery, Figma</p>-->
-<!--                            </div>-->
-<!--                            <div class="link">-->
-<!--                                <a href="https://www.figma.com/file/KRMVQ3X42X2FXBybc5jKAY/portfolio?type=design&node-id=76%3A233&mode=design&t=JRRb14uBA6K8floy-1">Figma</a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="progressWrap">-->
-<!--                    <div class="progressBar"></div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-
-
-    <!--    goal section-->
-<!--    <section class="goal" id="goal">-->
-<!--        <div class="quotation">-->
-<!--            &lt;!&ndash;                <span>&ldquo;</span>&ndash;&gt;-->
-<!--            <p class="txt-1">-->
-<!--                &#8220; Design is not just <br>-->
-<!--                what it looks like and feels like. <br>-->
-<!--                Design is how it works.&#8221;-->
-<!--            </p>-->
-<!--            &lt;!&ndash;                <span>&rdquo;</span>&ndash;&gt;-->
-<!--            <p class="txt-2">by steve jobs</p>-->
-<!--        </div>-->
-<!--        <p>디자인은 어떻게 보이고 느껴지냐의 문제만이 아니다. 디자인은 어떻게 기능하냐의 문제이다.</p>-->
-<!--        <div class="goalText">-->
-<!--            <p>-->
-<!--                시각적인 즐거움에서 그치지 않고, <br>-->
-<!--                사용자에게 즐거운 경험을 주는 것을 목표로 하는, <br>-->
-<!--                <span>성장하는 퍼블리셔</span>가 되고 싶습니다.-->
-<!--            </p>-->
-<!--        </div>-->
-<!--    </section>-->
+<!--        contact section-->
+    <section class="contact" id="contact">
+        <div class="textBox">
+            <p>if you want</p>
+            <p>contact me ?</p>
+        </div>
+        <div class="emojiDeco">
+            <div class="emoji emojiPhone"></div>
+            <div class="emoji emojiEmail"></div>
+            <div class="emoji emojiKakao"></div>
+        </div>
+        <ul>
+            <li>
+                <div>
+                    <p class="emoji emojiPhone">&#128222;</p>
+                    <p>010 - 3577- 5446</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p class="emoji emojiEmail">&#128231;</p>
+                    <p>zioklsi@naver.com</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p class="emoji emojiTalk">&#128172;</p>
+                    <p>zioklsi</p>
+                </div>
+            </li>
+        </ul>
+    </section>
 
 
     <!--    about section-->
@@ -492,13 +332,12 @@
 </main>
 
 <!--footer-->
-<!--<footer class="footer">-->
-<!--    <div>-->
-<!--        <h1>thank you !</h1>-->
-<!--        <p>©seoyujeong 2024 portfolio</p>-->
-<!--    </div>-->
-
-<!--</footer>-->
+<footer class="footer">
+    <div>
+        <h1>thank you !</h1>
+        <p>©seoyujeong 2024 portfolio</p>
+    </div>
+</footer>
 
 </body>
 </html>

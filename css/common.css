@@ -85,6 +85,7 @@ header .headerWrap .logo a span:nth-child(7){
 }
 
 header .headerWrap p{
+    font-family: 'GmarketSansLight', sans-serif;
     position: absolute;
     top: 50%;
     right: 60px;
@@ -145,8 +146,8 @@ header .headerWrap nav .gnb li a img{
     line-height: 100px;
 }
 .footer p{
+    font-family: 'GmarketSansLight', sans-serif;
     font-size: 20px;
-    font-weight: normal;
     line-height: 100px;
 }
 
