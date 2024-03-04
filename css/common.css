@@ -1,11 +1,18 @@
 @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css'); /*xe아이콘*/
-
+body{
+    background: #F0ECE8;
+    font-family: 'GmarketSansMedium', sans-serif;
+}
+.inner { width: 1170px; margin: 0 auto;
+    /*overflow: hidden; */
+}
 /*header*/
 header{
     /*display: none;*/
     position: fixed;
     width: 100%;
-    transition: 0.5s;
+    top: 0;
+    /*transition: 0.5s;*/
     z-index: 9999;
     background: #F0ECE8;
     border-bottom: 2px solid black;
